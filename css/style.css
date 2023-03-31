@@ -345,7 +345,7 @@ section.back-section{
 }
 
 h3.hello{
-    font-size: 28px;
+    font-size: 21px;
 }
 
 .peace{
@@ -1579,7 +1579,7 @@ h3.my-profession{
         max-width: 50%;
     }
     .project .project-item-inner .project-img .modal .modal-content{
-        padding-top: 5%;   
+        margin-top: 5%;   
     }
 }
 
@@ -1654,7 +1654,7 @@ h3.my-profession{
     }
 
     .project .project-item-inner .project-img .modal .modal-content{
-        padding-top: 15%;   
+        margin-top: 15%;   
     }
 
     .review-container{
@@ -1702,7 +1702,7 @@ h3.my-profession{
     }
 
     .project .project-item-inner .project-img .modal .modal-content{
-        padding-top: 35%;   
+        margin-top: 40%;   
     }
 
     .service-benefits-item{
