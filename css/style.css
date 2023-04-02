@@ -832,7 +832,7 @@ h3.my-profession{
 
 .project .project-item-inner .project-img .overlay i:active{
     background-color: var(--bg-black-100);
-    color: var(--skin-color)
+    color: var(--skin-color);
 }
 
 .project .project-item-inner .project-img:hover .overlay{
