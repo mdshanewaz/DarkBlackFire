@@ -1583,7 +1583,7 @@ h3.my-profession{
     }
 }
 
-@media(max-width: 919px){
+@media(max-width: 991px){
     .home .home-info,
     .about .about-content .education,
     .about .about-content .experience{
@@ -1690,7 +1690,7 @@ h3.my-profession{
     }
 }
 
-@media(max-width: 479px){
+@media(max-width: 575px){
     .about-hobbies .hobbies-item{
         max-width: 18%;
     }
