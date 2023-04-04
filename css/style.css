@@ -368,6 +368,7 @@ h3.my-profession{
 }
 
 .home-info p{
+    text-align: justify;
     margin-top: 30px;
     margin-bottom: 20px;
     font-size: 20px;
@@ -402,6 +403,7 @@ h3.my-profession{
     border: 1px solid var(--text-black-700);
 }
 
+/*Section-Container-Row*/
 .container{
     max-width: 1200px;
     width: 100%;
@@ -475,6 +477,7 @@ h3.my-profession{
 }
 
 .about .about-content .about-text p{
+    text-align: justify;
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
@@ -506,37 +509,34 @@ h3.my-profession{
     display: inline-block;
 }
 
-.about .about-content .personal-info .about-interest, .about-hobbies{
+.about .about-content .personal-info .about-interest, .about .about-content .personal-info .about-hobbies{
     flex: 0 0 100%;
-    max-width: 100%;
+    width: 100%;
 }
 
 .about .about-content .personal-info .about-interest .interest-item{
-    flex: 0 0 32%;
-    max-width: 32%;
-    width: 32%;
+    flex: 0 0 33.33%;
+    width: 32.8%;
     display: inline-block;
     text-align: center;
     justify-content: space-between;
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
-    padding: 10px 4px;
-    margin-bottom: 5px;    
+    padding: 10px 5px;
+    margin-bottom: 5px;  
 }
 
-.about-hobbies .hobbies-item{
-    flex: 0 0 19%;
-    max-width: 19%;
-    width: 19%;
+.about .about-content .personal-info .about-hobbies .hobbies-item{
+    flex: 0 0 20%;
+    width: 19.4%;
     display: inline-block;
     text-align: center;
     justify-content: space-between;
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
-    padding: 10px 4px;
-    margin-bottom: 0.7%;
+    padding: 10px 5px;
     margin-bottom: 5px;    
 }
 
@@ -1320,6 +1320,7 @@ h3.my-profession{
     flex: 0 0 100%;
     max-width: 100%;
 }
+
 .contact .contact-info-item{
     flex: 0 0 20%;
     max-width: 20%;
@@ -1523,6 +1524,7 @@ h3.my-profession{
     border: 2px solid var(--skin-color);
 }
 
+/*Responsive*/
 @media(max-width: 1319px){
     @-webkit-keyframes scroll{
         0%{
@@ -1572,6 +1574,14 @@ h3.my-profession{
     .about .about-content .personal-info .info-item p span{
         display: block;
         margin-left: 0;
+    }
+
+    .about-interest .interest-item{
+        max-width: 32%;
+    }
+
+    .about-hobbies .hobbies-item{
+        max-width: 18%;
     }
 
     .service-benefits-item{
@@ -1691,10 +1701,6 @@ h3.my-profession{
 }
 
 @media(max-width: 575px){
-    .about-hobbies .hobbies-item{
-        max-width: 18%;
-    }
-
     .about .about-content .personal-info .about-interest h4, .about-hobbies h4{
         font-weight: 600;
         padding: 10px 0;
