@@ -515,17 +515,18 @@ h3.my-profession{
     display: inline-block;
     text-align: center;
     justify-content: space-between;
+    padding-bottom: 5px;
 }
 
 .padd-5{
-    padding: 0px 5px 5px 5px;
+    padding: 0px 5px 0px 5px;
 }
 
 .about .about-content .personal-info .interest-item .interest-item-inner, .about .about-content .personal-info .hobbies-item .hobbies-item-inner{
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
-    padding: 5px 0px 5px 0;    
+    padding: 5px 0px 5px 0px;    
 }
 
 .about .about-content .personal-info .hobbies-item{
@@ -533,7 +534,8 @@ h3.my-profession{
     width: 20%;
     display: inline-block;
     text-align: center;
-    justify-content: space-between;       
+    justify-content: space-between;
+    padding-bottom: 5px;       
 }
 
 .about .about-content .personal-info .interest-item .interest-item-inner i, .hobbies-item .hobbies-item-inner i{
