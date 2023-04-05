@@ -509,43 +509,40 @@ h3.my-profession{
     display: inline-block;
 }
 
-.about .about-content .personal-info .about-interest, .about .about-content .personal-info .about-hobbies{
-    flex: 0 0 100%;
-    width: 100%;
-}
-
-.about .about-content .personal-info .about-interest .interest-item{
+.about .about-content .personal-info .interest-item{
     flex: 0 0 33.33%;
-    width: 32.8%;
+    width: 33.33%;
     display: inline-block;
     text-align: center;
     justify-content: space-between;
+}
+
+.padd-5{
+    padding: 0px 5px 5px 5px;
+}
+
+.about .about-content .personal-info .interest-item .interest-item-inner, .about .about-content .personal-info .hobbies-item .hobbies-item-inner{
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
-    padding: 10px 5px;
-    margin-bottom: 5px;  
+    padding: 5px 0px 5px 0;    
 }
 
-.about .about-content .personal-info .about-hobbies .hobbies-item{
+.about .about-content .personal-info .hobbies-item{
     flex: 0 0 20%;
-    width: 19.4%;
+    width: 20%;
     display: inline-block;
     text-align: center;
-    justify-content: space-between;
-    background-color: var(--bg-black-100);
-    border: 1px solid var(--bg-black-50);
-    border-radius: 10px;
-    padding: 10px 5px;
-    margin-bottom: 5px;    
+    justify-content: space-between;       
 }
 
-.about .about-content .personal-info .about-interest .interest-item i, .about-hobbies .hobbies-item i{
+.about .about-content .personal-info .interest-item .interest-item-inner i, .hobbies-item .hobbies-item-inner i{
     color: var(--skin-color);
     font-size: 20px;
+    margin-top: 10px;
 }
 
-.about .about-content .skills h3, .about .about-content .personal-info .about-interest h3, .about-hobbies h3{
+.about .about-content .skills h3, .about .about-content .personal-info h3{
     margin-top: 40px;
     font-size: 24px;
     margin-bottom: 15px;
@@ -553,9 +550,9 @@ h3.my-profession{
     color: var(--text-black-900);
 }
 
-.about .about-content .personal-info .about-interest h4, .about-hobbies h4{
+.about .about-content .personal-info .interest-item .interest-item-inner h4, .hobbies-item .hobbies-item-inner h4{
     font-weight: 600;
-    padding: 10px 0;
+    padding: 10px 0px;
     font-size: 16px;
     color: var(--text-black-900);
 }
@@ -1576,14 +1573,6 @@ h3.my-profession{
         margin-left: 0;
     }
 
-    .about-interest .interest-item{
-        max-width: 32%;
-    }
-
-    .about-hobbies .hobbies-item{
-        max-width: 18%;
-    }
-
     .service-benefits-item{
         flex: 0 0 50%;
         max-width: 50%;
@@ -1603,6 +1592,11 @@ h3.my-profession{
 
     .home .home-img{
         display: none;
+    }
+
+    .about .about-content .personal-info .interest-item .interest-item-inner h4, .hobbies-item .hobbies-item-inner h4{
+        padding: 10px 0;
+        font-size: 13px;
     }
 
     .project .project-item,
@@ -1701,8 +1695,7 @@ h3.my-profession{
 }
 
 @media(max-width: 575px){
-    .about .about-content .personal-info .about-interest h4, .about-hobbies h4{
-        font-weight: 600;
+    .about .about-content .personal-info .interest-item .interest-item-inner h4, .hobbies-item .hobbies-item-inner h4{
         padding: 10px 0;
         font-size: 10px;
     }
