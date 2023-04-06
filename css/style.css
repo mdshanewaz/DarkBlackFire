@@ -519,7 +519,7 @@ h3.my-profession{
 }
 
 .padd-5{
-    padding: 0px 5px 0px 5px;
+    padding-right: 5px;
 }
 
 .about .about-content .personal-info .interest-item .interest-item-inner, .about .about-content .personal-info .hobbies-item .hobbies-item-inner{
