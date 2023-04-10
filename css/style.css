@@ -707,13 +707,12 @@ h3.my-profession{
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 20px;
-    color: var(--skin-color);
 }
 
 .project .porject-heading h3{
-    font-weight: 600;
     font-size: 25px;
     text-align: center;
+    color: var(--skin-color); 
 }
 
 .project .project-item{
