@@ -102,7 +102,7 @@ section.back-section{
     border-radius: 40px;
     display: inline-block;
     white-space: nowrap;
-    border: none;
+    border: 1px solid var(--text-black-700);
     transition: all 0.3s ease;
 }
 
@@ -113,6 +113,7 @@ section.back-section{
 .btn:active{
     background: var(--bg-black-100);
     color: var(--skin-color);
+    border: 1px solid var(--skin-color);
 }
 
 ::before, ::after{
@@ -399,10 +400,6 @@ h3.my-profession{
     color: var(--skin-color);
 }
 
-.home .home-info .more-me{
-    border: 1px solid var(--text-black-700);
-}
-
 /*Section-Container-Row*/
 .container{
     max-width: 1200px;
@@ -570,7 +567,6 @@ h3.my-profession{
 .about .about-content .personal-info .buttons .btn{
     margin-right: 15px;
     margin-top: 10px;
-    border: 1px solid var(--text-black-700);
 }
 
 .about .about-content .skills{
@@ -710,13 +706,14 @@ h3.my-profession{
 .project .porject-heading{
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 40px;
-    color: var(--text-black-700);
+    margin-bottom: 20px;
+    color: var(--skin-color);
 }
 
-.project .porject-heading h2{
-    color: var(--text-balck-900);
-    font-weight: 500;
+.project .porject-heading h3{
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
 }
 
 .project .project-item{
@@ -734,6 +731,11 @@ h3.my-profession{
     display: block;
     position: relative;
 }
+
+.project .project-item-inner:hover{
+    border: 2px solid var(--skin-color);
+}
+
 
 .project .project-item-inner .project-img img{
     width: 100%;
@@ -835,6 +837,7 @@ h3.my-profession{
 .project .project-item-inner .project-img .overlay i:active{
     background-color: var(--bg-black-100);
     color: var(--skin-color);
+    border: 1px solid var(--skin-color);
 }
 
 .project .project-item-inner .project-img:hover .overlay{
@@ -868,6 +871,13 @@ h3.my-profession{
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid var(--skin-color);
+}
+
+.filter-control ul li:hover{
+    background: var(--skin-color);
+    color: var(--bg-black-100);
+    font-weight: 700;
+    border: 1px solid var(--text-black-700);
 }
 
 .filter-control ul li.active{
@@ -915,6 +925,7 @@ h3.my-profession{
 
 .project .coding-item .coding-item-inner:hover{
     box-shadow: 0 0 20px rgba( 48, 46, 77, 0.15);
+    border: 1px solid var(--skin-color);
 }
 
 .project .coding-item .coding-item-inner .icon{
@@ -936,12 +947,12 @@ h3.my-profession{
 
 .project .coding-item .coding-item-inner:hover .icon{
     background: var(--skin-color);
-    border: 1px solid #ffffff;
+    border: 1px solid var(--text-black-700);
 }
 
 .project .coding-item .coding-item-inner:hover .icon i{
     font-size: 25px;
-    color:  #ffffff;
+    color: var(--text-black-900);
 }
 
 .project .coding-item .coding-item-inner h4, .project .coding-item .coding-item-inner h4 a{
@@ -988,6 +999,11 @@ h3.my-profession{
     position: relative;
     margin: auto;
     border-radius: 10px;
+    border: 1px solid var(--bg-black-100);
+}
+
+.project-carousel-container .carousel-container:hover{
+    border: 1px solid var(--skin-color);
 }
 
 .project-carousel-container .carousel-container::before, .project-carousel-container .carousel-container::after{
@@ -1061,6 +1077,7 @@ h3.my-profession{
 
 .service .service-item .service-item-inner:hover{
     box-shadow: 0 0 20px rgba( 48, 46, 77, 0.15);
+    border: 1px solid var(--skin-color);
 }
 
 .service .service-item .service-item-inner .icon{
@@ -1082,12 +1099,12 @@ h3.my-profession{
 
 .service .service-item .service-item-inner:hover .icon{
     background: var(--skin-color);
-    border: 1px solid #ffffff;
+    border: 1px solid var(--text-black-700);
 }
 
 .service .service-item .service-item-inner:hover .icon i{
     font-size: 25px;
-    color:  #ffffff;
+    color: var(--text-black-900);
 }
 
 .service .service-item .service-item-inner h4{
@@ -1156,6 +1173,7 @@ h3.my-profession{
 
 .review-container .container-row-1 .row-1-col .card:hover{
     box-shadow: 0 0 20px rgba( 48, 46, 77, 0.15);
+    border: 1px solid var(--skin-color);
 }
 
 .review-container .container-row-1 .row-1-col .card img{
@@ -1255,6 +1273,7 @@ h3.my-profession{
 
 .service-benefits-item .service-benefits-inner:hover{
     box-shadow: 0 0 20px rgba( 48, 46, 77, 0.15);
+    border: 1px solid var(--skin-color);
 }
 
 .service-benefits-inner #service-circle{
@@ -1438,6 +1457,7 @@ h3.my-profession{
 
 .contact .contact-form .form-item .form-control:focus{
     box-shadow: 0 0 20px rgba( 48, 46, 77, 0.15);
+    border: 1px solid var(--skin-color);
 }
 
 .contact .contact-form .form-item textarea.form-control{
