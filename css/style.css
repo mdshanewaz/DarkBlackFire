@@ -1705,6 +1705,10 @@ h3.my-profession{
         margin-top: 30%;
     }
 
+    .review-container .container-row-2 .row-2-col-1, .review-container .container-row-2 .row-2-col-2 {
+        transform: translateY(190%);
+    }
+
     .contact .contact-info-item{
         flex: 0 0 50%;
         max-width: 50%;
