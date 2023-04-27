@@ -644,12 +644,17 @@ h3.my-profession{
 
 .about .about-content .timeline .timeline-item{
     position: relative;
-    padding-left: 37px;
-    padding-bottom: 50px;
+    padding-left: 35px;
+    padding-bottom: 30px;
 }
 
 .about .about-content .timeline .timeline-item:last-child{
     padding-bottom: 0;
+}
+
+.about .about-content .timeline .timeline-item .timeline-inner{
+    border: 1px solid #08f100; border-radius: 10px; 
+    padding: 10px;
 }
 
 .about .about-content .timeline .timeline-item::before{
