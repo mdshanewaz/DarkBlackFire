@@ -1518,13 +1518,22 @@ h3.my-profession{
     display: none;
 }
 
-.contact .contact-form .card .card-box img{
+.contact .contact-form .card .card-box .ufo{
     width: 50%;
     display: block;
     margin: auto;
+    position: relative;
 }
 
-.contact .contact-form .card .card-box img.ufo-move{
+.contact .contact-form .card .card-box .ninja{
+    width: 20%;
+    display: block;
+    margin: auto;
+    margin-top: -20%;
+    position: relative;
+}
+
+.contact .contact-form .card .card-box .ufo-move, .ninja-move{
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 1s infinite  alternate;
 }
@@ -1532,7 +1541,6 @@ h3.my-profession{
 .contact .contact-form .card .card-box .fa-envelope-circle-check{
     color: var(--skin-color);
     font-size: 5vw;
-    transform: translateY(-100%);
 }
 
 .contact .contact-form .card .card-box h2{
@@ -1665,6 +1673,11 @@ h3.my-profession{
         height: 140px;
     }
 
+    .contact .contact-form .card .card-box{
+        flex: 0 0 80%;
+        width: 80%;
+    }
+
     @-webkit-keyframes scroll{
         0%{
             transform: translateX(0);
@@ -1719,6 +1732,15 @@ h3.my-profession{
         max-width: 50%;
     }
 
+    .contact .contact-form .card{
+        top: -10%;
+    }
+
+    .contact .contact-form .card .card-box{
+        flex: 0 0 90%;
+        width: 90%;
+    }
+
     @-webkit-keyframes scroll{
         0%{
             transform: translateX(0);
@@ -1764,11 +1786,6 @@ h3.my-profession{
     .contact .contact-info-item{
         flex: 0 0 100%;
         max-width: 100%;
-    }
-
-    .contact .contact-form .card .card-box{
-        flex: 0 0 80%;
-        width: 80%;
     }
 
     @-webkit-keyframes scroll{
