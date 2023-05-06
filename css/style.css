@@ -205,14 +205,18 @@ section.back-section {
     justify-content: center;
     display: none;
     transition: all 0.5s ease;
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
 .aside .nav-toggler span {
     height: 2px;
-    width: 18px;
+    width: 19px;
     background: var(--skin-color);
     display: inline-block;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
 }
 
 .aside .nav-toggler.open span {
@@ -222,7 +226,7 @@ section.back-section {
 .aside .nav-toggler span::before {
     content: '';
     height: 2px;
-    width: 18px;
+    width: 19px;
     background: var(--skin-color);
     position: absolute;
     top: -6px;
@@ -237,7 +241,7 @@ section.back-section {
 .aside .nav-toggler span::after {
     content: '';
     height: 2px;
-    width: 18px;
+    width: 19px;
     background: var(--skin-color);
     position: absolute;
     top: 6px;
@@ -661,7 +665,7 @@ h3.my-profession {
 
 .about .about-content .timeline .timeline-item {
     position: relative;
-    padding-left: 35px;
+    padding-left: 30px;
     padding-bottom: 30px;
 }
 
@@ -685,7 +689,7 @@ h3.my-profession {
     background-color: var(--skin-color);
 }
 
-.about .about-content .timeline .circle-dot {
+.about .about-content .timeline .timeline-item .circle-dot {
     position: absolute;
     left: 0;
     top: 0;
