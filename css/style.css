@@ -216,7 +216,6 @@ section.back-section {
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-left: 2px;
 }
 
 .aside .nav-toggler.open span {
@@ -681,12 +680,13 @@ h3.my-profession {
 
 .about .about-content .timeline .timeline-item::before {
     content: '';
-    width: 1px;
     position: absolute;
+    width: 1px;
     height: 100%;
     left: 7px;
     top: 0;
     background-color: var(--skin-color);
+    transform: translateX(-1px);
 }
 
 .about .about-content .timeline .timeline-item .circle-dot {
@@ -697,6 +697,7 @@ h3.my-profession {
     width: 15px;
     border-radius: 50%;
     background-color: var(--skin-color);
+    transform: translateX(-1px);
 }
 
 .about .about-content .timeline .timeline-date {
