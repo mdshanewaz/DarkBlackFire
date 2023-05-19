@@ -697,7 +697,7 @@ h3.my-profession {
     width: 15px;
     border-radius: 50%;
     background-color: var(--skin-color);
-    transform: translateX(-1px);
+    transform: translateX(-7%);
 }
 
 .about .about-content .timeline .timeline-date {
