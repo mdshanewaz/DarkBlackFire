@@ -94,7 +94,8 @@ mainContent.addEventListener("click", (e) =>{
     const card = ".card-box"
     const isClosest = e.target.closest(card);
     if(!isClosest && (cardBox.style.display = "block")){
-        cardBox.style.display = "none"
+        cardBox.style.display = "none";
+        cardModal.style.display = "none";
     };
 });
 
@@ -349,7 +350,8 @@ function sendMail(){
         document.getElementById("email").value = "";
         document.getElementById("subject").value = "";
         document.getElementById("message").value = "";
-        document.getElementById("cardBox").style.display = "block";
+        cardBox.style.display = "block";
+        cardModal.style.display = "block";
         console.log(send);
     })
     .catch((err) => console.log(err));
@@ -357,9 +359,11 @@ function sendMail(){
 
 // Contact form pop-up button
 var cardBox = document.getElementById("cardBox");
+var cardModal = document.getElementsByClassName("cardModal")[0];
 var closeBtn = document.getElementsByClassName("close-btn")[0];
 
 closeBtn.onclick = function(){
     cardBox.style.display = "none";
+    cardModal.style.display = "none";
 }
 // Contact End

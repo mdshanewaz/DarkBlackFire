@@ -799,6 +799,7 @@ h3.my-profession {
     margin: auto;
     display: block;
     max-width: 50%;
+    transform: translateY(-5%);
 }
 
 .project .project-item-inner .project-img .modal .caption-alt {
@@ -808,8 +809,7 @@ h3.my-profession {
     max-width: 80%;
     text-align: center;
     color: #ccc;
-    padding: 10px 0;
-    height: 10%;
+    padding-top: 10px;
     font-size: 50px;
 }
 
@@ -1564,7 +1564,26 @@ h3.my-profession {
     position: relative;
 }
 
-.contact .contact-form .card .card-box {
+.contact .contact-form .card .cardModal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: hidden;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+.contact .contact-form .card  .card-box {
     flex: 0 0 50%;
     width: 50%;
     background-color: var(--bg-black-100);
@@ -1581,14 +1600,14 @@ h3.my-profession {
 }
 
 .contact .contact-form .card .card-box .ufo {
-    width: 70%;
+    width: 55%;
     display: block;
     margin: auto;
     position: relative;
 }
 
 .contact .contact-form .card .card-box .ninja {
-    width: 20%;
+    width: 15%;
     display: block;
     margin: auto;
     margin-top: -20%;
@@ -1604,11 +1623,12 @@ h3.my-profession {
 .contact .contact-form .card .card-box .fa-envelope-circle-check {
     color: var(--skin-color);
     font-size: 5vw;
+    transform: translateY(30%);
 }
 
 .contact .contact-form .card .card-box h2 {
     color: var(--text-black-900);
-    margin-bottom: 20px;
+    margin: 20px 0px;
 }
 
 .contact .contact-form .card .card-box .close-btn {
