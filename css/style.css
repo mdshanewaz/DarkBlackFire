@@ -1562,41 +1562,45 @@ h3.my-profession {
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .contact .contact-form .card .cardModal {
     display: none;
     /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 2;
+    z-index: 9;
     /* Location of the box */
     left: 0;
     top: 0;
+    flex: 0 0 100%;
     width: 100%;
     /* Full width */
     height: 100%;
     /* Full height */
+    position: fixed;
+    /* Stay in place */
     overflow: hidden;
     /* Enable scroll if needed */
     background-color: rgba(0, 0, 0, 0.9);
     /* Black w/ opacity */
 }
 
-.contact .contact-form .card  .card-box {
-    flex: 0 0 50%;
-    width: 50%;
+.contact .contact-form .card .card-box {
+    flex: 0 0 40%;
+    width: 40%;
+    left: 30%+270px;
+    top: 5%;
     background-color: var(--bg-black-100);
     border: 1px solid var(--skin-color);
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-    transform: translateY(-45%);
     z-index: 10;
     text-align: center;
-    position: absolute;
-    padding: 30px 0px 30px 0px;
+    padding: 30px 10px 30px 10px;
     margin: auto;
     display: none;
+    position: fixed;
+    overflow: hidden;
 }
 
 .contact .contact-form .card .card-box .ufo {
@@ -1713,6 +1717,10 @@ h3.my-profession {
 
     .project .project-item-inner .project-img .modal .modal-content {
         margin-top: 5%;
+    }
+
+    .contact .contact-form .card .card-box {
+        margin-top: 15%;
     }
 }
 
