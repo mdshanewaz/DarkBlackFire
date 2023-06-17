@@ -190,10 +190,6 @@ section.back-section {
     padding: 10px 13px;
 }
 
-.aside .nav {
-    margin-top: 50%;
-}
-
 .aside .nav-toggler {
     height: 40px;
     width: 45px;
@@ -254,6 +250,10 @@ section.back-section {
 .aside .nav-toggler.open span::after {
     transform: rotate(-45deg);
     top: 0;
+}
+
+.aside .nav {
+    margin-top: 70%;
 }
 
 .aside .nav li {
