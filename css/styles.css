@@ -387,12 +387,16 @@ h3.my-profession {
     color: var(--skin-color);
 }
 
-.home-info p {
+.home .home-info p {
     text-align: justify;
     margin-top: 30px;
     margin-bottom: 20px;
     font-size: 20px;
     color: var(--text-black-700);
+}
+
+.home .home-info .more-me {
+    font-weight: bold;
 }
 
 .home .home-info .icons {
@@ -591,6 +595,7 @@ h3.my-profession {
 .about .about-content .personal-info .buttons .btn {
     margin-right: 15px;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .about .about-content .skills {
@@ -882,6 +887,7 @@ h3.my-profession {
     padding: 10px;
     margin-top: 20px;
     border: 1px solid #fff;
+    font-weight: bold;
 }
 
 .project .project-item-inner .project-img .overlay i:active {
@@ -914,7 +920,6 @@ h3.my-profession {
     list-style: none;
     background: var(--bg-black-100);
     color: var(--skin-color);
-    font-weight: bold;
     padding: 12px 20px;
     margin: 5px;
     letter-spacing: 1px;
@@ -926,14 +931,14 @@ h3.my-profession {
 .filter-control ul li:hover {
     background: var(--skin-color);
     color: var(--bg-black-100);
-    font-weight: 700;
+    font-weight: bold;
     border: 1px solid var(--text-black-700);
 }
 
 .filter-control ul li.active {
     background: var(--skin-color);
     color: var(--bg-black-100);
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .project-container {
@@ -1587,6 +1592,7 @@ h3.my-profession {
 .contact .contact-form .card .card-box {
     flex: 0 0 40%;
     width: 40%;
+    height: auto;
     left: 30%+270px;
     top: 5%;
     background-color: var(--bg-black-100);
@@ -1720,6 +1726,10 @@ h3.my-profession {
 
     .contact .contact-form .card .card-box {
         margin-top: 15%;
+        left: 30px;
+        right: 30px;
+        width: auto;
+        height: auto;
     }
 }
 
@@ -1770,7 +1780,6 @@ h3.my-profession {
 
     .contact .contact-form .card .card-box {
         flex: 0 0 80%;
-        width: 80%;
     }
 
     @-webkit-keyframes scroll {
@@ -1836,7 +1845,6 @@ h3.my-profession {
 
     .contact .contact-form .card .card-box {
         flex: 0 0 90%;
-        width: 90%;
     }
 
     @-webkit-keyframes scroll {
