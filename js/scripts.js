@@ -162,6 +162,26 @@ var typed = new Typed(".typing",{
 });
 // Home End
 
+// About Start
+const aboutSec = document.querySelector(".about");
+const progressContainer = document.querySelectorAll(".progress");
+const progressIn = document.querySelectorAll(".progress-in");
+const skillPercentage = document.querySelectorAll(".skill-percent");
+
+
+
+let setPercentage = setInterval(() =>{
+    if(aboutSec.classList.contains("active")){
+        for(i=0; i<progressContainer.length; i++){
+            progressIn[i].style.width = progressContainer[i].getAttribute("data-percentage") + "%";
+            skillPercentage[i].innerText = progressContainer[i].getAttribute("data-percentage") + "%";
+            skillPercentage[i].style.left = progressContainer[i].getAttribute("data-percentage") + "%";
+        } 
+    } 
+}
+)
+// About End
+
 // Project Start
 // Project filterable image hover effect start  
 let list = document.querySelectorAll('.list');
@@ -233,40 +253,34 @@ rightbtn.addEventListener("click", function(){
 
 leftbtn.addEventListener("click", function(){
     slide.scrollLeft -= slideWidth;
-})
+});
 
 // Service review end
 // Service circle progress start 1
-let circleProgress1 = document.querySelector('.service-circle-1'),
-    progressValue1 = document.querySelector('.progress-value-1');
-
+var circleProgress = document.querySelectorAll("#service-circle"),
+progressValue = document.querySelectorAll("#progress-value");
 const serviceSec = document.querySelector(".service");
 
 let progressStartvalue1 = 0,
 progressEndvalue1 = 105,
 speed1 = 50;
 
-
 let progress1 = setInterval(() => {
     if(serviceSec.classList.contains("active")){
         
         progressStartvalue1++;
 
-        progressValue1.textContent = `${progressStartvalue1*2}↑`
-        circleProgress1.style.background = `conic-gradient(var(--skin-color) ${progressStartvalue1 * 3.6}deg, #fff 0deg)`
+        progressValue[0].textContent = `${progressStartvalue1*2}↑`
+        circleProgress[0].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue1 * 3.6}deg, #fff 0deg)`
 
         if(progressStartvalue1 == progressEndvalue1){
             clearInterval(progress1);
         }
     }
 }, speed1);
-
 // Service circle progress bar end 1
 
 // Service circle progress start 2
-let circleProgress2 = document.querySelector('.service-circle-2'),
-    progressValue2 = document.querySelector('.progress-value-2');
-
 let progressStartvalue2 = 0;
 let progressEndvalue2 = 13;
 let speed2 = 400;
@@ -276,8 +290,8 @@ let progress2 = setInterval(() => {
         
         progressStartvalue2++;
 
-        progressValue2.textContent = `${progressStartvalue2}>`
-        circleProgress2.style.background = `conic-gradient(var(--skin-color) ${progressStartvalue2*8 * 3.6}deg, #fff 0deg)`
+        progressValue[1].textContent = `${progressStartvalue2}>`
+        circleProgress[1].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue2*8 * 3.6}deg, #fff 0deg)`
 
         if(progressStartvalue2 == progressEndvalue2){
             clearInterval(progress2);
@@ -287,9 +301,6 @@ let progress2 = setInterval(() => {
 // Service circle progress bar end 2
 
 // Service circle progress start 3
-let circleProgress3 = document.querySelector('.service-circle-3'),
-    progressValue3 = document.querySelector('.progress-value-3');
-
 let progressStartvalue3 = 0;
 let progressEndvalue3 = 19;
 let speed3 = 250;
@@ -299,8 +310,8 @@ let progress3 = setInterval(() => {
 
         progressStartvalue3++;
 
-        progressValue3.textContent = `${progressStartvalue3}+`
-        circleProgress3.style.background = `conic-gradient(var(--skin-color) ${progressStartvalue3*5.5 * 3.6}deg, #fff 0deg)`
+        progressValue[2].textContent = `${progressStartvalue3}+`
+        circleProgress[2].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue3*5.5 * 3.6}deg, #fff 0deg)`
 
         if(progressStartvalue3 == progressEndvalue3){
             clearInterval(progress3);
@@ -310,26 +321,23 @@ let progress3 = setInterval(() => {
 // Service circle progress bar end 3
 
 // Service circle progress start 4
-let circleProgress4 = document.querySelector('.service-circle-4'),
-    progressValue4 = document.querySelector('.progress-value-4');
-
 let progressStartvalue4 = 0;
 let progressEndvalue4 = 100;
-let speed4 = 50;
+
 
 let progress4 = setInterval(() => {
     if(serviceSec.classList.contains("active")){
         
         progressStartvalue4++;
 
-        progressValue4.textContent = `${progressStartvalue4}%`
-        circleProgress4.style.background = `conic-gradient(var(--skin-color) ${progressStartvalue4 * 3.6}deg, #fff 0deg)`
+        progressValue[3].textContent = `${progressStartvalue4}%`
+        circleProgress[3].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue4 * 3.6}deg, #fff 0deg)`
 
         if(progressStartvalue4 == progressEndvalue4){
             clearInterval(progress4);
         }
     }
-}, speed4);
+}, speed1);
 // Service circle progress bar end 4
 // Service End
 
