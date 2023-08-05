@@ -105,6 +105,7 @@ navTogglerBtn.addEventListener("click", () => {
 
     if(cardBox.style.display = "block"){
         cardBox.style.display = "none";
+        cardModal.style.display = "none";
     }
 
     for(j=0; j<totalmodalList; j++){
