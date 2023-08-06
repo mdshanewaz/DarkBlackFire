@@ -193,7 +193,7 @@ section.back-section {
 .aside .nav-toggler {
     height: 40px;
     width: 45px;
-    border: 1px solid var(--bg-black-50);
+    /* border: 1px solid var(--bg-black-50); */
     cursor: pointer;
     position: fixed;
     left: 300px;
@@ -206,6 +206,7 @@ section.back-section {
     display: none;
     transition: all 0.5s ease;
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    border: 1px solid var(--skin-color);
 }
 
 .aside .nav-toggler span {
