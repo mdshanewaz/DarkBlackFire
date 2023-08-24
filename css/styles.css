@@ -198,6 +198,7 @@ section.back-section {
     height: 40px;
     width: 45px;
     /* border: 1px solid var(--bg-black-50); */
+    border: 1px solid var(--skin-color);
     cursor: pointer;
     position: fixed;
     left: 300px;
@@ -210,8 +211,11 @@ section.back-section {
     display: none;
     transition: all 0.5s ease;
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-    border: 1px solid var(--skin-color);
 }
+
+/* .aside .nav-toggler.open {
+    border: 1px solid var(--skin-color);
+} */
 
 .aside .nav-toggler span {
     height: 2px;
@@ -277,10 +281,12 @@ section.back-section {
 
 .aside .nav li a:hover {
     color: var(--skin-color);
+    border-bottom: 1px solid var(--skin-color);
 }
 
 .aside .nav li a.active {
     color: var(--skin-color);
+    border-bottom: 2px solid var(--skin-color);
     font-weight: 700;
 }
 
@@ -1724,6 +1730,7 @@ h3.my-profession {
 
     .aside.open {
         left: 0;
+        border-right: 1px solid var(--skin-color);
     }
 
     .aside .nav-toggler {
