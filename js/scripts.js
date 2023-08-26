@@ -136,7 +136,7 @@ function fixedPosition(){
 
 // Logo Start
 // Light and Dark mode
-var DaybrandNight = document.querySelector("#brand"); 
+var DaybrandNight = document.querySelector("#brand-logo"); 
 var sun = document.querySelector("#sun");
 sun.style.display = "none";
 var moon = document.querySelector("#moon");

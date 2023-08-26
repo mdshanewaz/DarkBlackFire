@@ -155,7 +155,7 @@ section.back-section {
 .logo a {
     position: relative;
     cursor: pointer;
-    /* display: block; */
+    display: block;
 }
 
 .logo img {
@@ -164,6 +164,12 @@ section.back-section {
     margin: auto;
     display: block;
     cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.logo img:hover {
+    border: 1px solid var(--skin-color);
 }
 
 .logo .theme-mode {
