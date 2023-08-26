@@ -165,6 +165,7 @@ section.back-section {
     display: block;
     cursor: pointer;
     border-radius: 50%;
+    border: 1px solid var(--bg-black-50);
 }
 
 .logo img:hover {
