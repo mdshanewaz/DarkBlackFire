@@ -1144,8 +1144,8 @@ h3.my-profession {
 }
 
 .project-carousel-container .carousel-container .carousel-wrapper .carousel-slide {
-    flex: 0 0 25%;
-    max-width: 25%;
+    flex: 0 0 20%;
+    max-width: 20%;
 }
 
 .project-carousel-container .carousel-container .carousel-wrapper .carousel-slide:hover {
@@ -1471,6 +1471,10 @@ h3.my-profession {
     transform: all 0.3s ease;
 }
 
+.contact .contact-info-item-map .contact-info-item-inner:hover {
+    border: 1px solid var(--skin-color);
+}
+
 .contact .contact-info-item .contact-info-item-inner:hover {
     border: 1px solid var(--skin-color);
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
@@ -1572,6 +1576,10 @@ h3.my-profession {
 
 .contact .contact-form .form-item .form-control:focus {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    border: 1px solid var(--skin-color);
+}
+
+.contact .contact-form .form-item .form-control:hover {
     border: 1px solid var(--skin-color);
 }
 
