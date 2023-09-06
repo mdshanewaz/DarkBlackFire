@@ -112,7 +112,7 @@ section.back-section {
 }
 
 .btn:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .btn:active {
@@ -172,8 +172,9 @@ section.back-section {
     border: 1px solid var(--skin-color);
 }
 
-.logo img:active{
-    border: 2px solid var(--skin-color); 
+.logo img:active {
+    border: 2px solid var(--skin-color);
+    transform: scale(0.98); 
 }
 
 .logo .theme-mode {
@@ -292,6 +293,12 @@ section.back-section {
 .aside .nav li a:hover {
     color: var(--skin-color);
     border-bottom: 1px solid var(--skin-color);
+}
+
+.aside .nav li a:active {
+    border-bottom: 2px solid var(--skin-color);
+    font-weight: 600;
+    transform: scale(0.98);
 }
 
 .aside .nav li a.active {
@@ -975,14 +982,18 @@ h3.my-profession {
 .filter-control ul li:hover {
     background: var(--skin-color);
     color: var(--bg-black-100);
-    font-weight: bold;
     border: 1px solid var(--text-black-700);
+}
+
+.filter-control ul li:active {
+    transform: scale(0.95);
 }
 
 .filter-control ul li.active {
     background: var(--skin-color);
     color: var(--bg-black-100);
     font-weight: bold;
+    border: 1px solid var(--text-black-700);
 }
 
 .project-container {
@@ -1603,7 +1614,7 @@ h3.my-profession {
 }
 
 .contact .contact-form .btn:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .contact .contact-form .btn:active {
@@ -1705,7 +1716,7 @@ h3.my-profession {
 }
 
 .contact .contact-form .card .card-box .close-btn:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .contact .contact-form .card .card-box .close-btn:active {
