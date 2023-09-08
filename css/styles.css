@@ -987,6 +987,7 @@ h3.my-profession {
 
 .filter-control ul li:active {
     transform: scale(0.95);
+    font-weight: bold;
 }
 
 .filter-control ul li.active {
