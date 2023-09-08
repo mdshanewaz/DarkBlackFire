@@ -913,6 +913,10 @@ h3.my-profession {
     cursor: pointer;
 }
 
+.project .project-item-inner .project-img .modal #close:active {
+    transform: scale(0.9);
+}
+
 .project .project-item-inner .project-img .overlay {
     background: #000;
     opacity: 0;
@@ -941,10 +945,17 @@ h3.my-profession {
     font-weight: bold;
 }
 
-.project .project-item-inner .project-img .overlay i:active {
+.project .project-item-inner .project-img .overlay i:hover {
     background-color: var(--bg-black-100);
     color: var(--skin-color);
     border: 1px solid var(--skin-color);
+}
+
+.project .project-item-inner .project-img .overlay i:active {
+    transform: scale(0.9);
+    background-color: var(--skin-color);
+    color: var(--bg-black-100);
+    border: 1px solid #fff;
 }
 
 .project .project-item-inner .project-img:hover .overlay {
