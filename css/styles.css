@@ -297,7 +297,6 @@ section.back-section {
 
 .aside .nav li a:active {
     border-bottom: 2px solid var(--skin-color);
-    font-weight: 600;
     transform: scale(0.98);
 }
 
@@ -998,7 +997,6 @@ h3.my-profession {
 
 .filter-control ul li:active {
     transform: scale(0.95);
-    font-weight: bold;
 }
 
 .filter-control ul li.active {
