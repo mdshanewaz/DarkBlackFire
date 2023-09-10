@@ -296,8 +296,7 @@ section.back-section {
 }
 
 .aside .nav li a:active {
-    border-bottom: 2px solid var(--skin-color);
-    transform: scale(0.98);
+    transform: scale(0.95);
 }
 
 .aside .nav li a.active {
