@@ -1492,10 +1492,6 @@ h3.my-profession {
     transform: all 0.3s ease;
 }
 
-.contact .contact-info-item-map .contact-info-item-inner:hover {
-    border: 1px solid var(--skin-color);
-}
-
 .contact .contact-info-item .contact-info-item-inner:hover {
     border: 1px solid var(--skin-color);
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
