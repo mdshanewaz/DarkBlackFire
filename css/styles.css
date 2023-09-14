@@ -645,13 +645,18 @@ h3.my-profession {
 }
 
 .about .about-content .skills .skill-item .progress {
-    background-color: var(--bg-black-50);
-    border: 1px solid var(--bg-black-100);
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
     height: 7px;
     border-radius: 5px;
     width: 100%;
     position: relative;
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.about .about-content .skills .skill-item:hover .progress {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    border: 1px solid var(--skin-color);
 }
 
 .about .about-content .skills .skill-item .progress .progress-in {
