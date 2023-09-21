@@ -1993,3 +1993,26 @@ h3.my-profession {
         }
     }
 }
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    box-shadow: inset 0 0 20px rgba(48, 46, 77, 0.15);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-black-50);
+    border: var(--bg-black-900); 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bg-black-900);
+    border: 1px solid var(--bg-black-50);
+}
