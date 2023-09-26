@@ -224,9 +224,9 @@ section.back-section {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-/* .aside .nav-toggler.open {
-    border: 1px solid var(--skin-color);
-} */
+.aside .nav-toggler.open {
+    border: 2px solid var(--skin-color);
+} 
 
 .aside .nav-toggler span {
     height: 2px;
