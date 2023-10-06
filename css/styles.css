@@ -112,7 +112,7 @@ section.back-section {
 }
 
 .btn:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .btn:active {
@@ -155,15 +155,26 @@ section.back-section {
 .logo a {
     position: relative;
     cursor: pointer;
-    /* display: block; */
+    display: block;
 }
 
 .logo img {
     width: 50%;
-    padding: 20px 0px;
-    margin: auto;
+    padding: 10px 5px;
+    margin: 5px auto 10px auto;
     display: block;
     cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid var(--bg-black-50);
+}
+
+.logo img:hover {
+    border: 1px solid var(--skin-color);
+}
+
+.logo img:active {
+    border: 2px solid var(--skin-color);
+    transform: scale(0.98); 
 }
 
 .logo .theme-mode {
@@ -197,7 +208,8 @@ section.back-section {
 .aside .nav-toggler {
     height: 40px;
     width: 45px;
-    border: 1px solid var(--bg-black-50);
+    /* border: 1px solid var(--bg-black-50); */
+    border: 1px solid var(--skin-color);
     cursor: pointer;
     position: fixed;
     left: 300px;
@@ -210,12 +222,11 @@ section.back-section {
     display: none;
     transition: all 0.5s ease;
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-    border: 1px solid var(--skin-color);
 }
 
-/* .aside .nav-toggler.open {
-    border: 1px solid var(--skin-color);
-} */
+.aside .nav-toggler.open {
+    border: 2px solid var(--skin-color);
+} 
 
 .aside .nav-toggler span {
     height: 2px;
@@ -281,10 +292,16 @@ section.back-section {
 
 .aside .nav li a:hover {
     color: var(--skin-color);
+    border-bottom: 1px solid var(--skin-color);
+}
+
+.aside .nav li a:active {
+    transform: scale(0.95);
 }
 
 .aside .nav li a.active {
     color: var(--skin-color);
+    border-bottom: 2px solid var(--skin-color);
     font-weight: 700;
 }
 
@@ -628,13 +645,18 @@ h3.my-profession {
 }
 
 .about .about-content .skills .skill-item .progress {
-    background-color: var(--bg-black-50);
-    border: 1px solid var(--bg-black-100);
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
     height: 7px;
     border-radius: 5px;
     width: 100%;
     position: relative;
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.about .about-content .skills .skill-item:hover .progress {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    border: 1px solid var(--skin-color);
 }
 
 .about .about-content .skills .skill-item .progress .progress-in {
@@ -894,6 +916,10 @@ h3.my-profession {
     cursor: pointer;
 }
 
+.project .project-item-inner .project-img .modal #close:active {
+    transform: scale(0.9);
+}
+
 .project .project-item-inner .project-img .overlay {
     background: #000;
     opacity: 0;
@@ -922,10 +948,17 @@ h3.my-profession {
     font-weight: bold;
 }
 
-.project .project-item-inner .project-img .overlay i:active {
+.project .project-item-inner .project-img .overlay i:hover {
     background-color: var(--bg-black-100);
     color: var(--skin-color);
     border: 1px solid var(--skin-color);
+}
+
+.project .project-item-inner .project-img .overlay i:active {
+    transform: scale(0.9);
+    background-color: var(--skin-color);
+    color: var(--bg-black-100);
+    border: 1px solid #fff;
 }
 
 .project .project-item-inner .project-img:hover .overlay {
@@ -963,14 +996,18 @@ h3.my-profession {
 .filter-control ul li:hover {
     background: var(--skin-color);
     color: var(--bg-black-100);
-    font-weight: bold;
     border: 1px solid var(--text-black-700);
+}
+
+.filter-control ul li:active {
+    transform: scale(0.95);
 }
 
 .filter-control ul li.active {
     background: var(--skin-color);
     color: var(--bg-black-100);
     font-weight: bold;
+    border: 1px solid var(--text-black-700);
 }
 
 .project-container {
@@ -1132,8 +1169,8 @@ h3.my-profession {
 }
 
 .project-carousel-container .carousel-container .carousel-wrapper .carousel-slide {
-    flex: 0 0 25%;
-    max-width: 25%;
+    flex: 0 0 20%;
+    max-width: 20%;
 }
 
 .project-carousel-container .carousel-container .carousel-wrapper .carousel-slide:hover {
@@ -1560,6 +1597,10 @@ h3.my-profession {
 
 .contact .contact-form .form-item .form-control:focus {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    border: 2px solid var(--skin-color);
+}
+
+.contact .contact-form .form-item .form-control:hover {
     border: 1px solid var(--skin-color);
 }
 
@@ -1583,7 +1624,7 @@ h3.my-profession {
 }
 
 .contact .contact-form .btn:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .contact .contact-form .btn:active {
@@ -1685,7 +1726,7 @@ h3.my-profession {
 }
 
 .contact .contact-form .card .card-box .close-btn:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .contact .contact-form .card .card-box .close-btn:active {
@@ -1728,6 +1769,7 @@ h3.my-profession {
 
     .aside.open {
         left: 0;
+        border-right: 1px solid var(--skin-color);
     }
 
     .aside .nav-toggler {
@@ -1950,4 +1992,27 @@ h3.my-profession {
             transform: translateX(calc(-70px * 4));
         }
     }
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    box-shadow: inset 0 0 20px rgba(48, 46, 77, 0.15);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-black-50);
+    border: var(--bg-black-900); 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bg-black-900);
+    border: 1px solid var(--bg-black-50);
 }
