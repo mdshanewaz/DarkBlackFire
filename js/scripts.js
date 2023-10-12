@@ -170,14 +170,15 @@ const progressIn = document.querySelectorAll(".progress-in");
 const skillPercentage = document.querySelectorAll(".skill-percent");
 
 const skill_section = document.querySelector("#skill-section");
+const skills_section = document.getElementById("skill-item-last");
 
-let setPercentage = setInterval(() =>{
-    if(aboutSec.classList.contains("active")){
-        for(i=0; i<progressContainer.length; i++){
-            progressIn[i].style.width = progressContainer[i].getAttribute("data-percentage") + "%";
-            skillPercentage[i].innerText = progressContainer[i].getAttribute("data-percentage") + "%";
-            skillPercentage[i].style.left = progressContainer[i].getAttribute("data-percentage") + "%";
-            }
+let setPercentage = setInterval(() => {
+    if(aboutSec.classList.contains("active")) {
+        for(i=0; i<progressContainer.length; i++) {
+                    progressIn[i].style.width = progressContainer[i].getAttribute("data-percentage") + "%";
+                    skillPercentage[i].innerText = progressContainer[i].getAttribute("data-percentage") + "%";
+                    skillPercentage[i].style.left = progressContainer[i].getAttribute("data-percentage") + "%";
+        }
     }
     else{
         for(i=0; i<progressContainer.length; i++){
@@ -269,23 +270,43 @@ progressValue = document.querySelectorAll("#progress-value");
 const serviceSec = document.querySelector(".service");
 
 let progressStartvalue1 = 0,
-progressEndvalue1 = 105,
+progressEndvalue1 = 115,
 speed1 = 50;
 
 const service_benefit_section = document.querySelector('#service-benefit-section');
 
 let progress1 = setInterval(() => {
-    if(serviceSec.classList.contains("active")){
-        progressStartvalue1++;
+    if(serviceSec.classList.contains("active")) {
+        window.addEventListener('scroll', () => {
+            console.log("Start")
+            console.log(elementToCheck.offsetTop)
+            console.log(elementToCheck.offsetHeight)
+            console.log(window.innerHeight, window.innerWidth)
+            console.log("End")  
+            if (elementIsVisibleInViewport(elementToCheck)) { 
+                progressStartvalue1++;
 
-        progressValue[0].textContent = `${progressStartvalue1*2}↑`;
-        circleProgress[0].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue1 * 3.6}deg, #fff 0deg)`;
+                progressValue[0].textContent = `${progressStartvalue1*2}↑`;
+                circleProgress[0].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue1 * 3.6}deg, #fff 0deg)`;
 
-        if(progressStartvalue1 == progressEndvalue1){
-            clearInterval(progress1);
-        }
+                if(progressStartvalue1 == progressEndvalue1){
+                    clearInterval(progress1);
+                }
+
+                console.log('Element is visible in viewport'); 
+            } 
+            else {
+                progressStartvalue1 = 0;
+
+                progressValue[0].textContent = `${progressStartvalue1*2}↑`;
+
+                console.log('Element is not visible in viewport'); 
+            } 
+        }, 1000);
     }
 }, speed1);
+ 
+
 // Service circle progress bar end 1
 
 // Service circle progress start 2
@@ -383,3 +404,14 @@ closeBtn.onclick = function(){
     cardModal.style.display = "none";
 }
 // Contact End
+
+// On viewport check function Start
+const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
+    const { top, left, bottom, right } = el.getBoundingClientRect();
+    const { innerHeight, innerWidth } = window;
+    return partiallyVisible ? ((top > 0 && top < innerHeight) || (bottom > 0 && bottom < innerHeight)) && ((left > 0 && left < innerWidth) || (right > 0 && right < innerWidth)) : top >= 0 && left >= 0 && bottom <= innerHeight && right <= innerWidth;
+};
+
+const elementToCheck = document.getElementById('service-benefit-section');
+
+// On Viewport check function End
