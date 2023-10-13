@@ -420,5 +420,4 @@ const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
 };
 
 const elementToCheck = document.getElementById('service-benefit-section');
-
 // On Viewport check function End
