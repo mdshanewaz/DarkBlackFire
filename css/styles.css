@@ -1418,6 +1418,7 @@ h3.my-profession {
     width: 210px;
     background: conic-gradient(var(--skin-color) 3.6deg, #fff 0deg);
     border-radius: 50%;
+    border: 1px solid var(--skin-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1429,6 +1430,7 @@ h3.my-profession {
     width: 190px;
     height: 190px;
     border-radius: 50%;
+    border: 1px solid var(--skin-color);
     background-color: var(--bg-black-900);
 }
 
