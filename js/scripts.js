@@ -270,39 +270,28 @@ progressValue = document.querySelectorAll("#progress-value");
 const serviceSec = document.querySelector(".service");
 
 let progressStartvalue1 = 0,
-progressEndvalue1 = 115,
+progressEndvalue1 = 105,
 speed1 = 50;
 
 const service_benefit_section = document.querySelector('#service-benefit-section');
 
 let progress1 = setInterval(() => {
     if(serviceSec.classList.contains("active")) {
-        window.addEventListener('scroll', () => {
-            console.log("Start")
-            console.log(elementToCheck.offsetTop)
-            console.log(elementToCheck.offsetHeight)
-            console.log(window.innerHeight, window.innerWidth)
-            console.log("End")  
-            if (elementIsVisibleInViewport(elementToCheck)) { 
-                progressStartvalue1++;
+        if (elementIsVisibleInViewport(elementToCheck)) { 
+            progressStartvalue1++;
 
-                progressValue[0].textContent = `${progressStartvalue1*2}↑`;
-                circleProgress[0].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue1 * 3.6}deg, #fff 0deg)`;
+            progressValue[0].textContent = `${progressStartvalue1*2}↑`;
+            circleProgress[0].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue1 * 3.6}deg, #fff 0deg)`;
 
-                if(progressStartvalue1 == progressEndvalue1){
-                    clearInterval(progress1);
-                }
+            if(progressStartvalue1 == progressEndvalue1){
+                clearInterval(progress1);
+            }
 
-                console.log('Element is visible in viewport'); 
+            console.log('Element is visible in viewport'); 
             } 
-            else {
-                progressStartvalue1 = 0;
-
-                progressValue[0].textContent = `${progressStartvalue1*2}↑`;
-
-                console.log('Element is not visible in viewport'); 
-            } 
-        }, 1000);
+        else {
+            console.log('Element is not visible in viewport'); 
+        } 
     }
 }, speed1);
  
@@ -316,17 +305,23 @@ let speed2 = 400;
 
 let progress2 = setInterval(() => {
     if(serviceSec.classList.contains("active")){
+        if (elementIsVisibleInViewport(elementToCheck)) { 
 
-        progressStartvalue2++;
+            progressStartvalue2++;
 
-        progressValue[1].textContent = `${progressStartvalue2}>`
-        circleProgress[1].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue2*8 * 3.6}deg, #fff 0deg)`
+            progressValue[1].textContent = `${progressStartvalue2}>`
+            circleProgress[1].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue2*8 * 3.6}deg, #fff 0deg)`
 
-        if(progressStartvalue2 == progressEndvalue2){
-            clearInterval(progress2);
+            if(progressStartvalue2 == progressEndvalue2){
+                clearInterval(progress2);
+            }
+
+            console.log('Element is visible in viewport'); 
+        }
+        else{
+            console.log('Element is not visible in viewport');
         }
     }
-
 }, speed2);
 // Service circle progress bar end 2
 
@@ -337,14 +332,20 @@ let speed3 = 250;
 
 let progress3 = setInterval(() => {
     if(serviceSec.classList.contains("active")){
-        progressStartvalue3++;
+        if (elementIsVisibleInViewport(elementToCheck)) {
+            progressStartvalue3++;
 
-        progressValue[2].textContent = `${progressStartvalue3}+`;
-        circleProgress[2].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue3*5.5 * 3.6}deg, #fff 0deg)`;
+            progressValue[2].textContent = `${progressStartvalue3}+`;
+            circleProgress[2].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue3*5.5 * 3.6}deg, #fff 0deg)`;
 
-        if(progressStartvalue3 == progressEndvalue3){
-            clearInterval(progress3);
+            if(progressStartvalue3 == progressEndvalue3){
+                clearInterval(progress3);
+            }
+            console.log('Element is visible in viewport');
         }
+        else {
+            console.log('Element is not visible in viewport');
+        }    
     }
 }, speed3);
 // Service circle progress bar end 3
@@ -356,15 +357,21 @@ let progressEndvalue4 = 100;
 
 let progress4 = setInterval(() => {
     if(serviceSec.classList.contains("active")){
+        if (elementIsVisibleInViewport(elementToCheck)) {
+            progressStartvalue4++;
 
-        progressStartvalue4++;
+            progressValue[3].textContent = `${progressStartvalue4}%`;
+            circleProgress[3].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue4 * 3.6}deg, #fff 0deg)`;
 
-        progressValue[3].textContent = `${progressStartvalue4}%`;
-        circleProgress[3].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue4 * 3.6}deg, #fff 0deg)`;
-
-        if(progressStartvalue4 == progressEndvalue4){
+            if(progressStartvalue4 == progressEndvalue4){
             clearInterval(progress4);
+            }
+
+            console.log('Element is visible in viewport');
         }
+        else {
+            console.log('Element is not visible in viewport');
+        }    
     }
 }, speed1);
 // Service circle progress bar end 4
