@@ -174,11 +174,13 @@ const skills_section = document.getElementById("skill-item-last");
 
 let setPercentage = setInterval(() => {
     if(aboutSec.classList.contains("active")) {
-        for(i=0; i<progressContainer.length; i++) {
-                    progressIn[i].style.width = progressContainer[i].getAttribute("data-percentage") + "%";
-                    skillPercentage[i].innerText = progressContainer[i].getAttribute("data-percentage") + "%";
-                    skillPercentage[i].style.left = progressContainer[i].getAttribute("data-percentage") + "%";
-        }
+        if (elementIsVisibleInViewport(elementToCheck2)) {
+            for(i=0; i<progressContainer.length; i++) {
+                progressIn[i].style.width = progressContainer[i].getAttribute("data-percentage") + "%";
+                skillPercentage[i].innerText = progressContainer[i].getAttribute("data-percentage") + "%";
+                skillPercentage[i].style.left = progressContainer[i].getAttribute("data-percentage") + "%";
+            }
+        }    
     }
     else{
         for(i=0; i<progressContainer.length; i++){
@@ -264,7 +266,7 @@ leftbtn.addEventListener("click", function(){
 });
 
 // Service review end
-// Service circle progress start 1
+// Service circle progress bar start 1
 var circleProgress = document.querySelectorAll("#service-circle"),
 progressValue = document.querySelectorAll("#progress-value");
 const serviceSec = document.querySelector(".service");
@@ -277,7 +279,7 @@ const service_benefit_section = document.querySelector('#service-benefit-section
 
 let progress1 = setInterval(() => {
     if(serviceSec.classList.contains("active")) {
-        if (elementIsVisibleInViewport(elementToCheck)) { 
+        if (elementIsVisibleInViewport(elementToCheck1)) { 
             progressStartvalue1++;
 
             progressValue[0].textContent = `${progressStartvalue1*2}↑`;
@@ -294,18 +296,16 @@ let progress1 = setInterval(() => {
         } 
     }
 }, speed1);
- 
-
 // Service circle progress bar end 1
 
-// Service circle progress start 2
+// Service circle progress bar start 2
 let progressStartvalue2 = 0;
 let progressEndvalue2 = 13;
 let speed2 = 400;
 
 let progress2 = setInterval(() => {
     if(serviceSec.classList.contains("active")){
-        if (elementIsVisibleInViewport(elementToCheck)) { 
+        if (elementIsVisibleInViewport(elementToCheck1)) { 
 
             progressStartvalue2++;
 
@@ -325,14 +325,14 @@ let progress2 = setInterval(() => {
 }, speed2);
 // Service circle progress bar end 2
 
-// Service circle progress start 3
+// Service circle progress bar start 3
 let progressStartvalue3 = 0;
 let progressEndvalue3 = 19;
 let speed3 = 250;
 
 let progress3 = setInterval(() => {
     if(serviceSec.classList.contains("active")){
-        if (elementIsVisibleInViewport(elementToCheck)) {
+        if (elementIsVisibleInViewport(elementToCheck1)) {
             progressStartvalue3++;
 
             progressValue[2].textContent = `${progressStartvalue3}+`;
@@ -350,14 +350,14 @@ let progress3 = setInterval(() => {
 }, speed3);
 // Service circle progress bar end 3
 
-// Service circle progress start 4
+// Service circle progress bar start 4
 let progressStartvalue4 = 0;
 let progressEndvalue4 = 100;
 
 
 let progress4 = setInterval(() => {
     if(serviceSec.classList.contains("active")){
-        if (elementIsVisibleInViewport(elementToCheck)) {
+        if (elementIsVisibleInViewport(elementToCheck1)) {
             progressStartvalue4++;
 
             progressValue[3].textContent = `${progressStartvalue4}%`;
@@ -419,5 +419,6 @@ const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
     return partiallyVisible ? ((top > 0 && top < innerHeight) || (bottom > 0 && bottom < innerHeight)) && ((left > 0 && left < innerWidth) || (right > 0 && right < innerWidth)) : top >= 0 && left >= 0 && bottom <= innerHeight && right <= innerWidth;
 };
 
-const elementToCheck = document.getElementById('service-benefit-section');
+const elementToCheck1 = document.getElementById('service-benefit-section');
+const elementToCheck2 = document.getElementById('skill-item-section');
 // On Viewport check function End
