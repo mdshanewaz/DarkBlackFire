@@ -95,7 +95,8 @@ section.back-section {
 }
 
 .shadow-dark {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    /* box-shadow: 0 0 20px rgba(48, 46, 77, 0.15); */
+     box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
 }
 
 .btn {
@@ -113,12 +114,14 @@ section.back-section {
 
 .btn:hover {
     transform: scale(0.95);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
 }
 
 .btn:active {
     background: var(--bg-black-100);
     color: var(--skin-color);
     border: 1px solid var(--skin-color);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
 }
 
 ::before,
@@ -170,11 +173,12 @@ section.back-section {
 
 .logo img:hover {
     border: 1px solid var(--skin-color);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
 }
 
 .logo img:active {
     border: 2px solid var(--skin-color);
-    transform: scale(0.98); 
+    transform: scale(0.97); 
 }
 
 .logo .theme-mode {
@@ -221,11 +225,12 @@ section.back-section {
     justify-content: center;
     display: none;
     transition: all 0.5s ease;
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
 }
 
 .aside .nav-toggler.open {
     border: 2px solid var(--skin-color);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 1);
 } 
 
 .aside .nav-toggler span {
@@ -255,6 +260,7 @@ section.back-section {
 .aside .nav-toggler.open span::before {
     transform: rotate(45deg);
     top: 0;
+    height: 3px;
 }
 
 .aside .nav-toggler span::after {
@@ -270,6 +276,7 @@ section.back-section {
 .aside .nav-toggler.open span::after {
     transform: rotate(-45deg);
     top: 0;
+    height: 3px;
 }
 
 .aside .nav {
@@ -292,7 +299,9 @@ section.back-section {
 
 .aside .nav li a:hover {
     color: var(--skin-color);
+    border-radius: 5px;
     border-bottom: 1px solid var(--skin-color);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
 }
 
 .aside .nav li a:active {
@@ -301,7 +310,9 @@ section.back-section {
 
 .aside .nav li a.active {
     color: var(--skin-color);
+    border-radius: 5px;
     border-bottom: 2px solid var(--skin-color);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
     font-weight: 700;
 }
 
@@ -579,7 +590,7 @@ h3.my-profession {
 .about .about-content .personal-info .interest-item .interest-item-inner:hover,
 .about .about-content .personal-info .hobbies-item .hobbies-item-inner:hover {
     border: 1px solid var(--skin-color);
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+     box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
 }
 
 .about .about-content .personal-info .hobbies-item {
@@ -651,11 +662,10 @@ h3.my-profession {
     border-radius: 5px;
     width: 100%;
     position: relative;
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+     box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
 }
 
 .about .about-content .skills .skill-item:hover .progress {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
     border: 1px solid var(--skin-color);
 }
 
@@ -681,7 +691,7 @@ h3.my-profession {
     color: var(--bg-black-100);
     background-color: var(--skin-color);
     border-radius: 5px;
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+     box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
     padding: 0px 5px 0px 5px;
     transition: left 5s linear;
     transform: translateX(-50%);
@@ -824,7 +834,7 @@ h3.my-profession {
 }
 
 .project .project-item-inner:hover {
-    border: 2px solid var(--skin-color);
+    border: 1px solid var(--skin-color);
 }
 
 .project .project-item-inner .project-img img {
@@ -911,13 +921,16 @@ h3.my-profession {
 
 .project .project-item-inner .project-img .modal #close:hover,
 .project .project-item-inner .project-img .modal #close:focus {
-    color: #bbb;
+    /* color: #bbb; */
+    color: var(--skin-color);
     text-decoration: none;
     cursor: pointer;
+    box-shadow: 0 0 20px rgba(8, 241, 0, 1);
+    border-radius: 50%;
 }
 
 .project .project-item-inner .project-img .modal #close:active {
-    transform: scale(0.9);
+    transform: scale(0.7);
 }
 
 .project .project-item-inner .project-img .overlay {
@@ -952,6 +965,7 @@ h3.my-profession {
     background-color: var(--bg-black-100);
     color: var(--skin-color);
     border: 1px solid var(--skin-color);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
 }
 
 .project .project-item-inner .project-img .overlay i:active {
@@ -959,6 +973,7 @@ h3.my-profession {
     background-color: var(--skin-color);
     color: var(--bg-black-100);
     border: 1px solid #fff;
+    box-shadow: 0 0 20px rgba(8, 241, 0, 1);
 }
 
 .project .project-item-inner .project-img:hover .overlay {
@@ -997,6 +1012,7 @@ h3.my-profession {
     background: var(--skin-color);
     color: var(--bg-black-100);
     border: 1px solid var(--text-black-700);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
 }
 
 .filter-control ul li:active {
@@ -1008,6 +1024,7 @@ h3.my-profession {
     color: var(--bg-black-100);
     font-weight: bold;
     border: 1px solid var(--text-black-700);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 1);
 }
 
 .project-container {
@@ -1048,8 +1065,8 @@ h3.my-profession {
 }
 
 .project .coding-item .coding-item-inner:hover {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-    border: 1px solid var(--skin-color);
+     box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
+    /* border: 1px solid var(--skin-color); */
 }
 
 .project .coding-item .coding-item-inner .icon {
@@ -1204,7 +1221,7 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner:hover {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
     border: 1px solid var(--skin-color);
 }
 
@@ -1304,7 +1321,7 @@ h3.my-profession {
 }
 
 .review-container .container-row-1 .row-1-col .card:hover {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
     border: 1px solid var(--skin-color);
 }
 
@@ -1365,6 +1382,7 @@ h3.my-profession {
 .review-container .container-row-2 .row-2-col-1 .btn-l:hover,
 .review-container .container-row-2 .row-2-col-2 .btn-r:hover {
     transform: scale(0.9);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
 }
 
 .review-container .container-row-2 .row-2-col-1 .btn-l:active,
@@ -1372,6 +1390,7 @@ h3.my-profession {
     background: var(--bg-black-100);
     color: var(--skin-color);
     border: 2px solid var(--skin-color);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 1);
 }
 
 .service .service-title {
@@ -1408,7 +1427,7 @@ h3.my-profession {
 }
 
 .service-benefits-item .service-benefits-inner:hover {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
     border: 1px solid var(--skin-color);
 }
 
@@ -1503,7 +1522,7 @@ h3.my-profession {
 
 .contact .contact-info-item .contact-info-item-inner:hover {
     border: 1px solid var(--skin-color);
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
 }
 
 .contact .contact-info-item .contact-info-item-inner .icon,
@@ -1601,12 +1620,13 @@ h3.my-profession {
 }
 
 .contact .contact-form .form-item .form-control:focus {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
     border: 2px solid var(--skin-color);
 }
 
 .contact .contact-form .form-item .form-control:hover {
     border: 1px solid var(--skin-color);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
 }
 
 .contact .contact-form .form-item textarea.form-control {
@@ -1677,7 +1697,7 @@ h3.my-profession {
     background-color: var(--bg-black-100);
     border: 1px solid var(--skin-color);
     border-radius: 5px;
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+     box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
     z-index: 10;
     text-align: center;
     padding: 30px 10px 30px 10px;
@@ -1775,6 +1795,7 @@ h3.my-profession {
     .aside.open {
         left: 0;
         border-right: 1px solid var(--skin-color);
+        box-shadow: 0 0 20px rgba(8, 241, 0, 0.7);
     }
 
     .aside .nav-toggler {
