@@ -592,7 +592,7 @@ h3.my-profession {
 .about .about-content .personal-info .interest-item .interest-item-inner:hover,
 .about .about-content .personal-info .hobbies-item .hobbies-item-inner:hover {
     border: 1px solid var(--skin-color);
-     box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
 }
 
 .about .about-content .personal-info .hobbies-item {
@@ -837,6 +837,7 @@ h3.my-profession {
 
 .project .project-item-inner:hover {
     border: 2px solid var(--skin-color);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
 }
 
 .project .project-item-inner .project-img img {
