@@ -329,7 +329,10 @@ section.back-section {
     font-weight: 500;
     text-align: center;
     color: var(--skin-color);
-    /* border-top: 1px solid var(--bg-black-50); */
+    border-top: 1px solid var(--bg-black-50);
+}
+
+.footer:hover{
     border-top: 1px solid var(--skin-color);
 }
 
