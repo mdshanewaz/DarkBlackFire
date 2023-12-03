@@ -344,12 +344,14 @@ section.back-section {
 
 .footer a:hover {
     box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
+    text-decoration: underline;
 }
 
 .footer a:active {
     box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
     transform: scale(0.5);
     font-weight: 700;
+    text-decoration-thickness: 2px;
 }
 
 /*Section-Container-Row*/
