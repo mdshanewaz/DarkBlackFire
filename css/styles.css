@@ -169,6 +169,7 @@ section.back-section {
     cursor: pointer;
     border-radius: 50%;
     border: 1px solid var(--bg-black-50);
+    object-fit: cover;
 }
 
 .logo img:hover {
@@ -440,6 +441,7 @@ section.back-section {
 
 .home .home-img img {
     width: 60%;
+    object-fit: cover;
 }
 
 .home .home-img img.vert-move {
@@ -646,6 +648,11 @@ h3.my-profession {
     padding: 10px 0px;
     font-size: 16px;
     color: var(--text-black-900);
+}
+
+.about .about-content .personal-info .interest-item .interest-item-inner:hover h4,
+.about .about-content .personal-info .hobbies-item .hobbies-item-inner:hover h4{
+    color: var(--skin-color);
 }
 
 .about .about-content .personal-info .buttons {
@@ -864,6 +871,7 @@ h3.my-profession {
     width: 100%;
     display: block;
     transition: 0.3s;
+    object-fit: cover;
 }
 
 .project .project-item-inner .project-img .modal {
@@ -873,7 +881,7 @@ h3.my-profession {
     /* Stay in place */
     z-index: 1;
     /* Sit on top */
-    padding-top: 7%;
+    padding-top: 5%;
     /* Location of the box */
     left: 0;
     top: 0;
@@ -891,6 +899,7 @@ h3.my-profession {
     margin: auto;
     display: block;
     max-width: 50%;
+    object-fit: cover;
 }
 
 .project .project-item-inner .project-img .modal .caption-alt {
@@ -1129,6 +1138,10 @@ h3.my-profession {
     text-transform: capitalize;
 }
 
+.project .coding-item .coding-item-inner:hover h4 a {
+    color: var(--skin-color);
+}
+
 .project .coding-item .coding-item-inner p {
     font-size: 16px;
     color: var(--text-black-700);
@@ -1172,6 +1185,7 @@ h3.my-profession {
 
 .project-carousel-container .carousel-container:hover {
     border: 1px solid var(--skin-color);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
 }
 
 .project-carousel-container .carousel-container::before,
@@ -1212,16 +1226,19 @@ h3.my-profession {
 .project-carousel-container .carousel-container .carousel-wrapper .carousel-slide {
     flex: 0 0 20%;
     max-width: 20%;
+    max-height: 20vh;
+    overflow: hidden;
 }
 
 .project-carousel-container .carousel-container .carousel-wrapper .carousel-slide:hover {
     transform: scaleX(1.5);
 }
 
-.project-carousel-container .carousel-container .carousel-wrapper img {
+.project-carousel-container .carousel-container .carousel-wrapper .carousel-slide img {
     width: 100%;
-    object-fit: cover;
+    height: 20vh;
     display: block;
+    object-fit: cover;
 }
 
 /*Service*/
@@ -1282,6 +1299,10 @@ h3.my-profession {
     color: var(--text-black-900);
     font-weight: 700;
     text-transform: capitalize;
+}
+
+.service .service-item .service-item-inner:hover h4 {
+    color: var(--skin-color);
 }
 
 .service .service-item .service-item-inner p {
@@ -1355,6 +1376,7 @@ h3.my-profession {
     border: 3px solid var(--skin-color);
     border-radius: 50%;
     padding: 1px;
+    object-fit: cover;
 }
 
 .review-container .container-row-1 .row-1-col .card h2 {
@@ -1365,6 +1387,10 @@ h3.my-profession {
 .review-container .container-row-1 .row-1-col .card h4 {
     margin-bottom: 20px;
     color: var(--text-black-900);
+}
+
+.review-container .container-row-1 .row-1-col .card:hover h4 {
+    color: var(--skin-color);
 }
 
 .review-container .container-row-1 .row-1-col .card p {
@@ -1484,6 +1510,10 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 
+.service-benefits-item .service-benefits-inner #service-circle:hover #progress-value {
+    color: var(--skin-color);
+}
+
 .service-benefits-item .service-benefits-inner .progress-text {
     font-size: 20px;
     font-weight: 400;
@@ -1597,6 +1627,7 @@ h3.my-profession {
     opacity: 0.3;
     margin-top: 3%;
     filter: grayscale(100%);
+    object-fit: cover;
 }
 
 .contact-map .contact-info-item-map .contact-info-item-inner .map-img img:hover {
@@ -1736,6 +1767,7 @@ h3.my-profession {
     display: block;
     margin: auto;
     position: relative;
+    object-fit: cover;
 }
 
 .contact .contact-form .card .card-box .ninja {
@@ -1744,6 +1776,7 @@ h3.my-profession {
     margin: auto;
     margin-top: -20%;
     position: relative;
+    object-fit: cover;
 }
 
 .contact .contact-form .card .card-box .ufo-move,
@@ -1941,6 +1974,10 @@ h3.my-profession {
 
     .project .project-item-inner .project-img .modal .modal-content {
         margin-top: 15%;
+    }
+
+    .project-carousel-container .carousel-container .carousel-wrapper .carousel-slide {
+        height: 10vh;
     }
 
     .review-container .container-row-1 {
