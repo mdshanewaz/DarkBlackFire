@@ -1375,10 +1375,15 @@ h3.my-profession {
 .review-container .container-row-1 .row-1-col .card img {
     width: 50%;
     margin-top: -35%;
-    border: 3px solid var(--skin-color);
+    border: 2px solid var(--skin-color);
     border-radius: 50%;
     padding: 1px;
     object-fit: cover;
+}
+
+.review-container .container-row-1 .row-1-col .card:hover img {
+    border: 3px solid var(--skin-color);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
 }
 
 .review-container .container-row-1 .row-1-col .card h2 {
