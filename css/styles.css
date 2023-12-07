@@ -1369,7 +1369,7 @@ h3.my-profession {
 
 .review-container .container-row-1 .row-1-col .card:hover {
     box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
-    border: 1px solid var(--skin-color);
+    border: 2px solid var(--skin-color);
 }
 
 .review-container .container-row-1 .row-1-col .card img {
