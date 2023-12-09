@@ -149,6 +149,11 @@ section.back-section {
     transition: all 0.5s ease;
 }
 
+.aside:hover {
+    border-right: 1px solid var(--skin-color);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
+}
+
 .logo {
     top: 0;
     display: block;
