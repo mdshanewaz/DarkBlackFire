@@ -270,37 +270,34 @@ leftbtn.addEventListener("click", function(){
 var circleProgress = document.querySelectorAll("#service-circle"),
 progressValue = document.querySelectorAll("#progress-value");
 const serviceSec = document.querySelector(".service");
+const service_benefit_section = document.querySelector('#service-benefit-section');
 
 let progressStartvalue1 = 0,
 progressEndvalue1 = 105,
 speed1 = 50;
 
-const service_benefit_section = document.querySelector('#service-benefit-section');
-
 var progress1 = setInterval(() => {
     if(serviceSec.classList.contains("active")) {
         if (elementIsVisibleInViewport(elementToCheck1)) {
-                progressStartvalue1++;
-                progressValue[0].textContent = `${progressStartvalue1*2}↑`;
-                circleProgress[0].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue1 * 3.6}deg, #fff 0deg)`;
+            progressStartvalue1++;
+            progressValue[0].textContent = `${progressStartvalue1*2}↑`;
+            circleProgress[0].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue1 * 3.6}deg, #fff 0deg)`;
 
-                if(progressStartvalue1 == progressEndvalue1){
-                    clearInterval(progress1);
-                }
-                console.log('Element is visible in viewport');     
+            if(progressStartvalue1 == progressEndvalue1){
+                clearInterval(progress1);
             }
+            console.log('Element is visible in viewport');    
+        }
         else {
             console.log('Element is not visible in viewport'); 
-        } 
+        }  
     }
     else {
         progressStartvalue1 = 0;
         progressValue[0].textContent = `$0`;
         circleProgress[0].style.background = `conic-gradient(var(--skin-color) ${progressStartvalue1 * 3.6}deg, #fff 0deg)`;
-        return progress1;
     }
-}, speed1);
-
+}, speed1)
 // Service circle progress bar end 1
 
 // Service circle progress bar start 2
