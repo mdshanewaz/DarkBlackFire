@@ -340,6 +340,7 @@ section.back-section {
 
 .footer:hover{
     border-top: 1px solid var(--skin-color);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
 }
 
 .footer a {
@@ -349,14 +350,17 @@ section.back-section {
 
 .footer a:hover {
     box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
-    text-decoration: underline;
+    border: 1px solid var(--skin-color);
+    border-radius: 5px;
 }
 
 .footer a:active {
     box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
     transform: scale(0.5);
     font-weight: 700;
+    text-decoration: underline;
     text-decoration-thickness: 2px;
+    border: none;
 }
 
 /*Section-Container-Row*/
