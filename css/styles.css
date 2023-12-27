@@ -347,22 +347,26 @@ section.back-section {
 .footer a {
     color: var(--skin-color);
     text-decoration: none;
-    padding: 0px 2px 0px 2px;
+    padding: 0px 3px 0px 3px;
 }
 
 .footer a:hover {
     box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
-    border: 1px solid var(--skin-color);
+    border: 1px solid var(--text-black-900);
     border-radius: 5px;
+    text-decoration: underline;
+    background: var(--skin-color);
+    color: var(--bg-black-100);
 }
 
 .footer a:active {
     box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
     transform: scale(0.5);
     font-weight: 700;
-    text-decoration: underline;
     text-decoration-thickness: 2px;
     border: none;
+    background: transparent;
+    color: var(--skin-color);
 }
 
 /*Section-Container-Row*/
