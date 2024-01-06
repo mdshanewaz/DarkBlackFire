@@ -1792,6 +1792,10 @@ h3.my-profession {
     overflow: hidden;
 }
 
+.contact .contact-form .card .card-box:hover {
+    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
+}
+
 .contact .contact-form .card .card-box .ufo {
     width: 55%;
     display: block;
