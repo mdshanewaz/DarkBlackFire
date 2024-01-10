@@ -232,7 +232,7 @@ section.back-section {
     justify-content: center;
     display: none;
     transition: all 0.5s ease;
-    box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
 .aside .nav-toggler.open {
