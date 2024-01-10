@@ -716,7 +716,7 @@ h3.my-profession {
     border-radius: 5px;
     width: 100%;
     position: relative;
-     box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
 }
 
 .about .about-content .skills .skill-item:hover .progress {
