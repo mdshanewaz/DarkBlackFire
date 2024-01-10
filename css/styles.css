@@ -721,6 +721,7 @@ h3.my-profession {
 
 .about .about-content .skills .skill-item:hover .progress {
     border: 1px solid var(--skin-color);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
 }
 
 .about .about-content .skills .skill-item .progress .progress-in {
@@ -1025,7 +1026,7 @@ h3.my-profession {
     background-color: var(--bg-black-100);
     color: var(--skin-color);
     border: 1px solid var(--skin-color);
-    box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
 .project .project-item-inner .project-img .overlay i:active {
@@ -1033,7 +1034,7 @@ h3.my-profession {
     background-color: var(--skin-color);
     color: var(--bg-black-100);
     border: 1px solid #fff;
-    box-shadow: 0 0 20px rgba(8, 241, 0, 1);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
 }
 
 .project .project-item-inner .project-img:hover .overlay {
@@ -1212,7 +1213,7 @@ h3.my-profession {
 
 .project-carousel-container .carousel-container:hover {
     border: 1px solid var(--skin-color);
-    box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
 .project-carousel-container .carousel-container::before,
@@ -1289,7 +1290,7 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner:hover {
-    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
     border: 1px solid var(--skin-color);
 }
 
@@ -1509,7 +1510,7 @@ h3.my-profession {
 }
 
 .service-benefits-item .service-benefits-inner:hover {
-    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
     border: 1px solid var(--skin-color);
 }
 
@@ -1608,7 +1609,7 @@ h3.my-profession {
 
 .contact .contact-info-item .contact-info-item-inner:hover {
     border: 1px solid var(--skin-color);
-    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
 .contact .contact-info-item .contact-info-item-inner .icon,
@@ -1707,12 +1708,12 @@ h3.my-profession {
 }
 
 .contact .contact-form .form-item .form-control:focus {
-    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
     border: 2px solid var(--skin-color);
 }
 
 .contact .contact-form .form-item .form-control:hover {
-    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
     border: 1px solid var(--skin-color);
 }
 
@@ -1784,7 +1785,7 @@ h3.my-profession {
     background-color: var(--bg-black-100);
     border: 1px solid var(--skin-color);
     border-radius: 5px;
-    box-shadow: 0 0 20px rgba(8, 241, 0, 1);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
     z-index: 10;
     text-align: center;
     padding: 30px 10px 30px 10px;
@@ -1845,14 +1846,14 @@ h3.my-profession {
 
 .contact .contact-form .card .card-box .close-btn:hover {
     transform: scale(0.95);
-    box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
 .contact .contact-form .card .card-box .close-btn:active {
     background-color: var(--bg-black-100);
     color: var(--skin-color);
     border: 2px solid var(--skin-color);
-    box-shadow: 0 0 20px rgba(8, 241, 0, 1);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
 }
 
 /*Responsive*/
