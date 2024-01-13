@@ -890,7 +890,7 @@ h3.my-profession {
 
 .project .project-item-inner:hover {
     border: 2px solid var(--skin-color);
-    box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
 .project .project-item-inner .project-img img {
