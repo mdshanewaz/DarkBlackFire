@@ -210,6 +210,7 @@ section.back-section {
     border: 1px solid var(--text-black-900);
     border-radius: 50%;
     padding: 10px;
+    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
 }
 
 .logo .theme-mode #moon {
@@ -346,15 +347,14 @@ section.back-section {
 
 .footer a {
     color: var(--skin-color);
-    text-decoration: none;
-    padding: 0px 3px 0px 3px;
+    text-decoration: underline;
+    padding: 1px 3px 3px 3px;
 }
 
 .footer a:hover {
     box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
     border: 1px solid var(--text-black-900);
     border-radius: 5px;
-    text-decoration: underline;
     background: var(--skin-color);
     color: var(--bg-black-100);
 }
@@ -364,7 +364,6 @@ section.back-section {
     transform: scale(0.5);
     font-weight: 700;
     text-decoration-thickness: 2px;
-    border: none;
     background: transparent;
     color: var(--skin-color);
 }
