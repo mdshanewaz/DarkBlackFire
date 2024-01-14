@@ -151,7 +151,7 @@ section.back-section {
 
 .aside:hover {
     border-right: 1px solid var(--skin-color);
-    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
 .logo {
@@ -179,13 +179,13 @@ section.back-section {
 
 .logo img:hover {
     border: 1px solid var(--skin-color);
-    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
 .logo img:active {
     border: 2px solid var(--skin-color);
     transform: scale(0.97);
-    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5); 
+    box-shadow: 0 0 30px rgba(8, 241, 0, 1); 
 }
 
 .logo .theme-mode {
@@ -341,7 +341,7 @@ section.back-section {
 
 .footer:hover{
     border-top: 1px solid var(--skin-color);
-    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
 .footer a {
@@ -360,7 +360,7 @@ section.back-section {
 }
 
 .footer a:active {
-    box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
     transform: scale(0.5);
     font-weight: 700;
     text-decoration-thickness: 2px;
@@ -639,7 +639,7 @@ h3.my-profession {
 .about .about-content .personal-info .interest-item .interest-item-inner:hover,
 .about .about-content .personal-info .hobbies-item .hobbies-item-inner:hover {
     border: 1px solid var(--skin-color);
-    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
 .about .about-content .personal-info .hobbies-item {
@@ -746,7 +746,7 @@ h3.my-profession {
     color: var(--bg-black-100);
     background-color: var(--skin-color);
     border-radius: 5px;
-     box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
     padding: 0px 5px 0px 5px;
     transition: left 5s linear;
     transform: translateX(-50%);
@@ -1409,7 +1409,7 @@ h3.my-profession {
 
 .review-container .container-row-1 .row-1-col .card:hover img {
     border: 3px solid var(--skin-color);
-    box-shadow: 0 0 20px rgba(8, 241, 0, 0.2);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
 .review-container .container-row-1 .row-1-col .card h2 {
