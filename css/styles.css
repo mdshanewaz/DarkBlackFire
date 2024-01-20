@@ -1796,6 +1796,7 @@ h3.my-profession {
 
 .contact .contact-form .card .card-box:hover {
     box-shadow: 0 0 30px rgba(8, 241, 0, 1);
+    border: 3px solid var(--skin-color);
 }
 
 .contact .contact-form .card .card-box .ufo {
