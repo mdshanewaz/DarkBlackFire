@@ -447,7 +447,6 @@ var myAudio = new Audio('media/Mark Eliyahu - Endless.mp3');
 setTimeout(() => {
     setTimeout(() => {
         myAudio.play();
-        console.log("hehehe")
     }, 1000);
 }, 7000);
 
