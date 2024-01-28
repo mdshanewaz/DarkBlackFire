@@ -446,7 +446,8 @@ var myAudio = new Audio('media/Mark Eliyahu - Endless.mp3');
 
 setTimeout(() => {
     myAudio.play();
-}, 2000);
+    console.log("hehehe")
+}, 5000);
 
 var playPasueIcon = document.querySelector("#play-pause-icon");
 
@@ -470,3 +471,9 @@ setInterval(() => {
         myAudio.play();
     }
 }, 500);
+
+document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(() => {
+        myAudio.play();
+    }, 2000);
+});

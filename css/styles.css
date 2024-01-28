@@ -2155,7 +2155,7 @@ h3.my-profession {
 .music-switch {
     position: fixed;
     right: 0;
-    top: 85px;
+    bottom: 20px;
     padding: 5px;
     width: 150px;
     height: 40px;
