@@ -434,3 +434,39 @@ const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
 const elementToCheck1 = document.getElementById('service-benefit-section');
 const elementToCheck2 = document.getElementById('skill-item-section');
 // On Viewport check function End
+
+// Background Music Start
+const musicSwitchToggle = document.querySelector(".music-switch-toggler");
+
+musicSwitchToggle.addEventListener('click', () => {
+    document.querySelector(".music-switch").classList.toggle("open");
+})
+
+var myAudio = new Audio('media/Mark Eliyahu - Endless.mp3');
+
+setTimeout(() => {
+    myAudio.play();
+}, 2000);
+
+var playPasueIcon = document.querySelector("#play-pause-icon");
+
+function togglePlayPause() {
+    if (playPasueIcon.classList.contains("fa-pause")) {
+        playPasueIcon.classList.remove("fa-pause");
+        playPasueIcon.classList.add("fa-play");
+        myAudio.pause()
+    } 
+    else {
+        playPasueIcon.classList.remove("fa-play");
+        playPasueIcon.classList.add("fa-pause");
+        myAudio.play(); 
+    }
+};
+
+setInterval(() => {
+    const musicProgressBar = document.querySelector(".music-progress-grow");
+    musicProgressBar.style.width = (myAudio.currentTime / myAudio.duration) * 100 + "%";
+    if(myAudio.currentTime == myAudio.duration) {
+        myAudio.play();
+    }
+}, 500);

@@ -150,7 +150,7 @@ section.back-section {
 }
 
 .aside:hover {
-    border-right: 1px solid var(--skin-color);
+    border-right: 2px solid var(--skin-color);
     box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
@@ -173,17 +173,21 @@ section.back-section {
     display: block;
     cursor: pointer;
     border-radius: 50%;
-    border: 1px solid var(--bg-black-50);
+    /* border: 1px solid var(--bg-black-50); */
     object-fit: cover;
+    border: 1px solid var(--skin-color);
+    box-shadow: 0 0 20px rgba(8, 241, 0, 0.5);
 }
 
 .logo img:hover {
-    border: 1px solid var(--skin-color);
-    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
+    background: var(--bg-black-900);
+    border: 2px solid var(--skin-color);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.7);
 }
 
 .logo img:active {
-    border: 2px solid var(--skin-color);
+    background: var(--bg-black-900);
+    border: 3px solid var(--skin-color);
     transform: scale(0.97);
     box-shadow: 0 0 30px rgba(8, 241, 0, 1); 
 }
@@ -319,6 +323,7 @@ section.back-section {
 .aside .nav li a.active {
     color: var(--skin-color);
     border-radius: 5px;
+    background: var(--bg-black-900);
     border-bottom: 2px solid var(--skin-color);
     box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
     font-weight: 700;
@@ -975,7 +980,8 @@ h3.my-profession {
     font-weight: bold;
     transition: 0.3s;
     padding: 0 15px 0 15px;
-    border: 1px solid var(--bg-black-50);
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
 .project .project-item-inner .project-img .modal #close:hover,
@@ -984,8 +990,9 @@ h3.my-profession {
     color: var(--skin-color);
     text-decoration: none;
     cursor: pointer;
-    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
     border-radius: 50%;
+    border: 1px solid var(--skin-color);
 }
 
 .project .project-item-inner .project-img .modal #close:active {
@@ -1890,8 +1897,8 @@ h3.my-profession {
 
     .aside.open {
         left: 0;
-        border-right: 1px solid var(--skin-color);
-        box-shadow: 0 0 20px rgba(8, 241, 0, 0.7);
+        border-right: 2px solid var(--skin-color);
+        box-shadow: 0 0 30px rgba(8, 241, 0, 0.7);
     }
 
     .aside .nav-toggler {
@@ -2135,10 +2142,102 @@ h3.my-profession {
 ::-webkit-scrollbar-thumb {
     background: var(--bg-black-50);
     border: var(--bg-black-900); 
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--bg-black-900);
+    /* background: var(--bg-black-900); */
+    background: var(--skin-color);
     border: 1px solid var(--bg-black-50);
 }
+
+/*Background Music*/
+.music-switch {
+    position: fixed;
+    right: 0;
+    top: 85px;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    border: 1px solid var(--skin-color);
+    background: var(--bg-black-100);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+}
+
+.music-switch.open:hover {
+    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
+}
+
+.music-switch.open {
+    transform: translateX(-10px);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
+}
+
+.music-switch .music-switch-toggler {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    background: var(--bg-black-100);
+    color: var(--text-black-900);
+    right: 100%;
+    /* border: 1px solid var(--bg-black-50); */
+    border: 1px solid var(--skin-color);
+    margin-right: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    top: 0;
+    line-height: 38px;
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
+}
+
+.music-switch.open .music-switch-toggler {
+    margin-right: 0;
+}
+
+.music-switch .music-switch-toggler:hover {
+    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
+    border: 2px solid var(--skin-color);
+}
+
+.music-switch .music{
+    width: 100%;
+    display: flex;
+}
+
+.music-switch .music .music-btn {
+    width: 30px;
+    height: 40px;
+}
+
+.music-switch .music .music-btn button {
+    background: transparent;
+    border: none;
+    margin: 5px 0 0 3px;
+}
+
+.music-switch .music .music-btn i {
+    color: var(--skin-color);
+    background: var(--bg-black-900);
+    font-size: 20px;
+    padding: 0;
+}
+
+.music-switch .music .music-progrees {
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    width: 100%;
+    height: 5px;
+    margin-top: 13px;
+}
+
+.music-switch .music .music-progrees .music-progress-grow {
+    width: 0%;
+    height: 100%;
+    background: var(--skin-color);
+} 
