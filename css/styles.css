@@ -1895,6 +1895,11 @@ h3.my-profession {
         left: -270px;
     }
 
+    .aside:hover {
+        border-right: none;
+        box-shadow: none;
+    }
+
     .aside.open {
         left: 0;
         border-right: 2px solid var(--skin-color);
