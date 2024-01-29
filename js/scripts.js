@@ -77,8 +77,8 @@ document.querySelector(".hire-me").addEventListener("click", function(){
 
 const mainContent = document.querySelector(".main-content"),
     navTogglerBtn = document.querySelector(".nav-toggler"),
-    aside = document.querySelector(".aside");
-    darkblackshadow = document.querySelectorAll(".dark-black-shadow")
+    aside = document.querySelector(".aside"),
+    darkblackshadow = document.querySelectorAll(".dark-black-shadow");
 
 mainContent.addEventListener("click", (e) =>{
     if(navTogglerBtn.classList.contains("open") && aside.classList.contains("open")){
@@ -439,6 +439,7 @@ const elementToCheck2 = document.getElementById('skill-item-section');
 const musicSwitchToggle = document.querySelector(".music-switch-toggler");
 
 musicSwitchToggle.addEventListener('click', () => {
+    musicSwitchToggle.classList.toggle("open");
     document.querySelector(".music-switch").classList.toggle("open");
 })
 

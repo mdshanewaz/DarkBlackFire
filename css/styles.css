@@ -1895,11 +1895,6 @@ h3.my-profession {
         left: -270px;
     }
 
-    .aside:hover {
-        border-right: none;
-        box-shadow: none;
-    }
-
     .aside.open {
         left: 0;
         border-right: 2px solid var(--skin-color);
@@ -2009,6 +2004,17 @@ h3.my-profession {
 }
 
 @media(max-width: 767px) {
+
+    .aside:hover {
+        border-right: none;
+        box-shadow: none;
+    }
+
+    .aside.open {
+        left: 0;
+        border-right: 2px solid var(--skin-color);
+        box-shadow: 0 0 30px rgba(8, 241, 0, 0.7);
+    }
 
     .about .about-content .skills,
     .about .about-content .personal-info,
@@ -2201,8 +2207,10 @@ h3.my-profession {
     box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
-.music-switch.open .music-switch-toggler {
+.music-switch .music-switch-toggler.open {
     margin-right: 0;
+    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
+    border: 2px solid var(--skin-color);
 }
 
 .music-switch .music-switch-toggler:hover {
@@ -2245,4 +2253,18 @@ h3.my-profession {
     width: 0%;
     height: 100%;
     background: var(--skin-color);
-} 
+}
+
+@media(max-width: 767px) {
+
+    .music-switch .music-switch-toggler:hover {
+        box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
+        border: 1px solid var(--skin-color);
+    }
+
+    .music-switch .music-switch-toggler.open {
+        margin-right: 0;
+        box-shadow: 0 0 30px rgba(8, 241, 0, 1);
+        border: 2px solid var(--skin-color);
+    }
+}
