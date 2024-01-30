@@ -449,7 +449,7 @@ setTimeout(() => {
     setTimeout(() => {
         myAudio.play();
     }, 1000);
-}, 7000);
+}, 13000);
 
 var playPasueIcon = document.querySelector("#play-pause-icon");
 
