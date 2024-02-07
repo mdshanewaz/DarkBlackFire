@@ -2218,9 +2218,13 @@ h3.my-profession {
     border: 2px solid var(--skin-color);
 }
 
-.music-switch .music{
+.music-switch .music {
     width: 100%;
     display: flex;
+}
+
+.music-switch:hover {
+    border: 2px solid var(--skin-color);
 }
 
 .music-switch .music .music-btn {
@@ -2247,6 +2251,10 @@ h3.my-profession {
     width: 100%;
     height: 5px;
     margin-top: 13px;
+}
+
+.music-switch.open:hover .music .music-progrees {
+    border: 1px solid var(--skin-color);   
 }
 
 .music-switch .music .music-progrees .music-progress-grow {
