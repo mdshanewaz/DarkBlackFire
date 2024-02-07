@@ -2253,7 +2253,7 @@ h3.my-profession {
     margin-top: 13px;
 }
 
-.music-switch.open:hover .music .music-progrees{
+.music-switch.open:hover .music .music-progrees {
     border: 1px solid var(--skin-color);   
 }
 
