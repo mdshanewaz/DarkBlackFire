@@ -444,14 +444,15 @@ musicSwitchToggle.addEventListener('click', () => {
 })
 
 var myAudio = new Audio('media/Mark Eliyahu - Endless.mp3');
+var playPasueIcon = document.querySelector("#play-pause-icon");
 
 setTimeout(() => {
     setTimeout(() => {
+        playPasueIcon.classList.remove("fa-play");
+        playPasueIcon.classList.add("fa-pause");
         myAudio.play();
     }, 1000);
 }, 13000);
-
-var playPasueIcon = document.querySelector("#play-pause-icon");
 
 function togglePlayPause() {
     if (playPasueIcon.classList.contains("fa-pause")) {

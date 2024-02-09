@@ -2151,6 +2151,7 @@ h3.my-profession {
     background: var(--bg-black-50);
     border: var(--bg-black-900); 
     border-radius: 10px;
+    border: 1px solid var(--skin-color);
 }
 
 ::-webkit-scrollbar-thumb:hover {
