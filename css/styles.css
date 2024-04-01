@@ -2216,6 +2216,10 @@ h3.my-profession {
     border: 2px solid var(--skin-color);
 }
 
+.music-switch .music-switch-toggler:active {
+    transform: scale(0.8);
+}
+
 .music-switch .music {
     width: 100%;
     display: flex;
