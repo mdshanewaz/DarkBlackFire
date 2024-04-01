@@ -2218,6 +2218,7 @@ h3.my-profession {
 
 .music-switch .music-switch-toggler:active {
     transform: scale(0.8);
+    box-shadow: 0 0 50px rgba(8, 241, 0, 2);
 }
 
 .music-switch .music {
