@@ -448,9 +448,9 @@ var playPasueIcon = document.querySelector("#play-pause-icon");
 
 setTimeout(() => {
     setTimeout(() => {
+        myAudio.play();
         playPasueIcon.classList.remove("fa-play");
         playPasueIcon.classList.add("fa-pause");
-        myAudio.play();
     }, 1000);
 }, 13000);
 
