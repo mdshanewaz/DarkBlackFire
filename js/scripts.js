@@ -473,4 +473,4 @@ setInterval(() => {
     if(myAudio.currentTime == myAudio.duration) {
         myAudio.play();
     }
-}, 500);
+}, 50);
