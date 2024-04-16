@@ -2221,6 +2221,10 @@ h3.my-profession {
     box-shadow: 0 0 50px rgba(8, 241, 0, 2);
 }
 
+.music-switch .music-switch-toggler:active .fa-spin {
+    color: var(--skin-color);
+}
+
 .music-switch .music {
     width: 100%;
     display: flex;
