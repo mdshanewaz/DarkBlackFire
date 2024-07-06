@@ -364,7 +364,7 @@ let progressEndvalue4 = 100;
 
 
 let progress4 = setInterval(() => {
-    if(serviceSec.classList.contains("active")){
+    if(serviceSec.classList.contains("active")) {
         if (elementIsVisibleInViewport(elementToCheck1)) {
             progressStartvalue4++;
             progressValue[3].textContent = `${progressStartvalue4}%`;
@@ -414,6 +414,7 @@ function sendMail(){
 }
 
 // Contact form pop-up button
+const contactSec = document.querySelector(".contact");
 var cardBox = document.getElementById("cardBox");
 var cardModal = document.getElementsByClassName("cardModal")[0];
 var closeBtn = document.getElementsByClassName("close-btn")[0];
@@ -422,6 +423,14 @@ closeBtn.onclick = function(){
     cardBox.style.display = "none";
     cardModal.style.display = "none";
 }
+
+var ninja_vdo = document.getElementById("ninja-vdo");
+
+let vdo_auto_play = setInterval(() => {
+    if(contactSec.classList.contains("active")) {
+        ninja_vdo.play();
+    }
+}, speed1)
 // Contact End
 
 // On viewport check function Start
