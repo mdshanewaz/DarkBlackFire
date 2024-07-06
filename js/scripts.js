@@ -452,7 +452,7 @@ musicSwitchToggle.addEventListener('click', () => {
     document.querySelector(".music-switch").classList.toggle("open");
 })
 
-var myAudio = new Audio('media/Mark Eliyahu - Endless.mp3');
+var myAudio = new Audio('media/audio/Mark Eliyahu - Endless.mp3');
 var playPasueIcon = document.querySelector("#play-pause-icon");
 
 setTimeout(() => {
