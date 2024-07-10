@@ -2245,6 +2245,10 @@ h3.my-profession {
     border: 2px solid var(--skin-color);
 }
 
+.music-switch .music-switch-toggler.open .fa-spin {
+    color: var(--skin-color);
+}
+
 .music-switch .music-switch-toggler:hover {
     box-shadow: 0 0 30px rgba(8, 241, 0, 1);
     border: 2px solid var(--skin-color);
