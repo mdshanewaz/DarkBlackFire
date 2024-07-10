@@ -996,7 +996,7 @@ h3.my-profession {
 }
 
 .project .project-item-inner .project-img .modal #close:active {
-    transform: scale(0.8);
+    transform: scale(0.7);
     box-shadow: 0 0 30px rgba(8, 241, 0, 1);
 }
 
