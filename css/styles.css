@@ -980,7 +980,7 @@ h3.my-profession {
     font-weight: bold;
     transition: 0.3s;
     padding: 0 15px 0 15px;
-    border: 1px solid #f1f1f1;
+    border: 2px solid #f1f1f1;
     box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
@@ -992,11 +992,11 @@ h3.my-profession {
     cursor: pointer;
     box-shadow: 0 0 30px rgba(8, 241, 0, 1);
     border-radius: 50%;
-    border: 1px solid var(--skin-color);
+    border: 2px solid var(--skin-color);
 }
 
 .project .project-item-inner .project-img .modal #close:active {
-    transform: scale(0.7);
+    transform: scale(0.8);
     box-shadow: 0 0 30px rgba(8, 241, 0, 1);
 }
 
@@ -1024,22 +1024,22 @@ h3.my-profession {
     color: var(--bg-black-100);
     padding: 10px;
     margin-top: 20px;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     font-weight: bold;
 }
 
 .project .project-item-inner .project-img .overlay i:hover {
     background-color: var(--bg-black-100);
     color: var(--skin-color);
-    border: 1px solid var(--skin-color);
+    border: 2px solid var(--skin-color);
     box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
 .project .project-item-inner .project-img .overlay i:active {
-    transform: scale(0.9);
+    transform: scale(0.8);
     background-color: var(--skin-color);
     color: var(--bg-black-100);
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     box-shadow: 0 0 30px rgba(8, 241, 0, 1);
 }
 
