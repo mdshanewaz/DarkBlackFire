@@ -2228,7 +2228,7 @@ h3.my-profession {
     background: var(--bg-black-100);
     color: var(--text-black-900);
     right: 100%;
-    /* border: 2px solid var(--bg-black-50); */
+    /* border: 2px solid var(--bg-black-50);*/
     border: 1px solid var(--skin-color);
     margin-right: 40px;
     cursor: pointer;
