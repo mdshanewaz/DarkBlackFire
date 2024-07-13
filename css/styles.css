@@ -444,7 +444,7 @@ section.back-section {
     height: 80px;
     width: 80px;
     right: 20px;
-    bottom: -40px;
+    bottom: -20px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
 }
@@ -2202,7 +2202,7 @@ h3.my-profession {
     padding: 5px;
     width: 150px;
     height: 40px;
-    border: 1px solid var(--skin-color);
+    border: 2px solid var(--skin-color);
     background: var(--bg-black-100);
     z-index: 101;
     border-radius: 5px;
@@ -2252,6 +2252,7 @@ h3.my-profession {
 .music-switch .music-switch-toggler:hover {
     box-shadow: 0 0 30px rgba(8, 241, 0, 1);
     border: 2px solid var(--skin-color);
+    color: var(--skin-color);
 }
 
 .music-switch .music-switch-toggler:active {
