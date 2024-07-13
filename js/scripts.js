@@ -265,6 +265,27 @@ leftbtn.addEventListener("click", function(){
     slide.scrollLeft -= slideWidth;
 });
 
+
+// Service review on hover star class change start 
+document.querySelectorAll('.review_card').forEach(card => {
+    card.addEventListener('mouseover', function() {
+        this.querySelectorAll('.review_star').forEach(icon => {
+            icon.classList.remove('fa-regular');
+            icon.classList.add('fa-solid');
+        });
+        console.log('Hover');
+    });
+
+    card.addEventListener('mouseout', function() {
+        this.querySelectorAll('.review_star').forEach(icon => {
+            icon.classList.remove('fa-solid');
+            icon.classList.add('fa-regular');
+        });
+        console.log('Hover out');
+    });
+});
+// Service review on hover star class change end
+
 // Service review end
 // Service circle progress bar start 1
 var circleProgress = document.querySelectorAll("#service-circle"),
@@ -286,10 +307,10 @@ var progress1 = setInterval(() => {
             if(progressStartvalue1 == progressEndvalue1){
                 clearInterval(progress1);
             }
-            console.log('Element is visible in viewport');    
+            // console.log('Element is visible in viewport');    
         }
         else {
-            console.log('Element is not visible in viewport'); 
+            // console.log('Element is not visible in viewport'); 
         }  
     }
     else {
@@ -315,10 +336,10 @@ let progress2 = setInterval(() => {
             if(progressStartvalue2 == progressEndvalue2){
                 clearInterval(progress2);
             }
-            console.log('Element is visible in viewport'); 
+            // console.log('Element is visible in viewport'); 
         }
         else{
-            console.log('Element is not visible in viewport');
+            // console.log('Element is not visible in viewport');
         }
     }
     else {
@@ -344,10 +365,10 @@ let progress3 = setInterval(() => {
             if(progressStartvalue3 == progressEndvalue3){
                 clearInterval(progress3);
             }
-            console.log('Element is visible in viewport');
+            // console.log('Element is visible in viewport');
         }
         else {
-            console.log('Element is not visible in viewport');
+            // console.log('Element is not visible in viewport');
         }    
     }
     else {
@@ -374,10 +395,10 @@ let progress4 = setInterval(() => {
                 clearInterval(progress4);
             }
 
-            console.log('Element is visible in viewport');
+            // console.log('Element is visible in viewport');
         }
         else {
-            console.log('Element is not visible in viewport');
+            // console.log('Element is not visible in viewport');
         }    
     }
     else {
