@@ -145,7 +145,7 @@ section.back-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid var(--bg-black-50);
+    border-right: 2px solid var(--bg-black-50);
     transition: all 0.5s ease;
 }
 
