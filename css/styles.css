@@ -1075,13 +1075,13 @@ h3.my-profession {
     letter-spacing: 1px;
     cursor: pointer;
     border-radius: 5px;
-    border: 1px solid var(--skin-color);
+    border: 2px solid var(--skin-color);
 }
 
 .filter-control ul li:hover {
     background: var(--skin-color);
     color: var(--bg-black-100);
-    border: 1px solid var(--text-black-700);
+    border: 2px solid var(--text-black-700);
     box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
 }
 
@@ -1093,7 +1093,7 @@ h3.my-profession {
     background: var(--skin-color);
     color: var(--bg-black-100);
     font-weight: bold;
-    border: 1px solid var(--text-black-700);
+    border: 2px solid var(--text-black-700);
     box-shadow: 0 0 20px rgba(8, 241, 0, 1);
 }
 
@@ -2251,7 +2251,7 @@ h3.my-profession {
 
 .music-switch .music-switch-toggler:hover {
     box-shadow: 0 0 30px rgba(8, 241, 0, 1);
-    border: 2px solid var(--skin-color);
+    /* border: 2px solid var(--skin-color); */
     color: var(--skin-color);
 }
 
