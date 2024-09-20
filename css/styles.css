@@ -1665,14 +1665,18 @@ h3.my-profession {
 }
 
 .contact-map .contact-info-item-map .contact-info-item-inner .map-img {
-    margin-top: -2%;
+    /* margin-top: -2%; */
+    display: flex;
 }
 
 .contact-map .contact-info-item-map .contact-info-item-inner .map-img img {
-    width: 18%;
+    width: 20%;
     opacity: 0.3;
     filter: grayscale(100%);
-    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    object-fit:contain ;
+    display: block;
 }
 
 .contact-map .contact-info-item-map .contact-info-item-inner .map-img img:hover {
