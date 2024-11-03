@@ -2195,7 +2195,8 @@ h3.my-profession {
 ::-webkit-scrollbar-thumb:hover {
     /* background: var(--bg-black-900); */
     background: var(--skin-color);
-    border: 1px solid var(--bg-black-50);
+    /* border: 1px solid var(--bg-black-50); */
+    border: 1px solid var(--text-black-900);
 }
 
 /*Background Music*/
