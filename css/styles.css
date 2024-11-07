@@ -2136,6 +2136,12 @@ h3.my-profession {
         width: auto;
         height: auto;
     }
+
+    .music-switch .music-switch-toggler:hover {
+        box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
+        border: 1px solid var(--skin-color);
+        color: var(--text-black-900);
+    }
 }
 
 @media(max-width: 991px) {
@@ -2180,12 +2186,6 @@ h3.my-profession {
 
     .contact .contact-form .card .card-box {
         flex: 0 0 80%;
-    }
-
-    .music-switch .music-switch-toggler:hover {
-        box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
-        border: 1px solid var(--skin-color);
-        color: var(--text-black-900);
     }
 
     @-webkit-keyframes scroll {
