@@ -1901,6 +1901,164 @@ h3.my-profession {
     box-shadow: 0 0 30px rgba(8, 241, 0, 1);
 }
 
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    box-shadow: inset 0 0 20px rgba(48, 46, 77, 0.15);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-black-50);
+    border: var(--bg-black-900); 
+    border-radius: 10px;
+    border: 1px solid var(--skin-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* background: var(--bg-black-900); */
+    background: var(--skin-color);
+    /* border: 1px solid var(--bg-black-50); */
+    border: 1px solid var(--text-black-900);
+}
+
+/*Background Music*/
+.music-switch {
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    border: 2px solid var(--skin-color);
+    background: var(--bg-black-100);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+}
+
+.music-switch.open:hover {
+    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
+}
+
+.music-switch.open {
+    transform: translateX(-10px);
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
+}
+
+.music-switch .music-switch-toggler {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 21px;
+    background: var(--bg-black-100);
+    color: var(--text-black-900);
+    right: 100%;
+    /* border: 2px solid var(--bg-black-50);*/
+    border: 1px solid var(--skin-color);
+    margin-right: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    top: 0;
+    line-height: 38px;
+    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);  
+}
+
+.music-switch .music-switch-toggler .spin {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.music-switch .music-switch-toggler.open {
+    margin-right: 0;
+    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
+    border: 2px solid var(--skin-color);
+}
+
+.music-switch .music-switch-toggler.open .spin {
+    color: var(--skin-color);
+}
+
+.music-switch .music-switch-toggler:hover {
+    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
+    /* border: 2px solid var(--skin-color); */
+    color: var(--skin-color);
+}
+
+.music-switch .music-switch-toggler:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 50px rgba(8, 241, 0, 2);
+}
+
+.music-switch .music-switch-toggler:active .spin {
+    color: var(--skin-color);
+}
+
+.music-switch .music {
+    width: 100%;
+    display: flex;
+}
+
+.music-switch:hover {
+    border: 2px solid var(--skin-color);
+}
+
+.music-switch .music .music-btn {
+    width: 30px;
+    height: 40px;
+}
+
+.music-switch .music .music-btn button {
+    background: transparent;
+    border: none;
+    margin: 5px 0 0 3px;
+}
+
+.music-switch .music .music-btn i {
+    color: var(--skin-color);
+    background: var(--bg-black-900);
+    font-size: 20px;
+    padding: 0;
+}
+
+.music-switch .music .music-progrees {
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    width: 100%;
+    height: 5px;
+    margin-top: 13px;
+}
+
+.music-switch.open:hover .music .music-progrees {
+    border: 1px solid var(--skin-color);
+    border-radius: 5px;   
+}
+
+.music-switch .music .music-progrees .music-progress-grow {
+    width: 0%;
+    height: 100%;
+    background: var(--skin-color);
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+
 /*Responsive*/
 @media(max-width: 1319px) {
     @-webkit-keyframes scroll {
@@ -1927,6 +2085,11 @@ h3.my-profession {
 @media(max-width: 1199px) {
     section .container {
         padding-top: 70px;
+    }
+
+    .aside:hover {
+        border-right: none;
+        box-shadow: none;
     }
 
     .aside {
@@ -2019,6 +2182,12 @@ h3.my-profession {
         flex: 0 0 80%;
     }
 
+    .music-switch .music-switch-toggler:hover {
+        box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
+        border: 1px solid var(--skin-color);
+        color: var(--text-black-900);
+    }
+
     @-webkit-keyframes scroll {
         0% {
             transform: translateX(0);
@@ -2098,6 +2267,12 @@ h3.my-profession {
         flex: 0 0 90%;
     }
 
+    .music-switch .music-switch-toggler.open {
+        margin-right: 0;
+        box-shadow: 0 0 30px rgba(8, 241, 0, 1);
+        border: 2px solid var(--skin-color);
+    }
+
     @-webkit-keyframes scroll {
         0% {
             transform: translateX(0);
@@ -2170,160 +2345,5 @@ h3.my-profession {
         100% {
             transform: translateX(calc(-70px * 4));
         }
-    }
-}
-
-/*Scrollbar*/
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--bg-black-100);
-    border: 1px solid var(--bg-black-50);
-    box-shadow: inset 0 0 20px rgba(48, 46, 77, 0.15);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--bg-black-50);
-    border: var(--bg-black-900); 
-    border-radius: 10px;
-    border: 1px solid var(--skin-color);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    /* background: var(--bg-black-900); */
-    background: var(--skin-color);
-    /* border: 1px solid var(--bg-black-50); */
-    border: 1px solid var(--text-black-900);
-}
-
-/*Background Music*/
-.music-switch {
-    position: fixed;
-    right: 0;
-    bottom: 20px;
-    padding: 5px;
-    width: 150px;
-    height: 40px;
-    border: 2px solid var(--skin-color);
-    background: var(--bg-black-100);
-    z-index: 101;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    transform: translateX(100%);
-}
-
-.music-switch.open:hover {
-    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
-}
-
-.music-switch.open {
-    transform: translateX(-10px);
-    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
-}
-
-.music-switch .music-switch-toggler {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    font-size: 25px;
-    background: var(--bg-black-100);
-    color: var(--text-black-900);
-    right: 100%;
-    /* border: 2px solid var(--bg-black-50);*/
-    border: 1px solid var(--skin-color);
-    margin-right: 40px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 50%;
-    top: 0;
-    line-height: 38px;
-    box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
-}
-
-.music-switch .music-switch-toggler.open {
-    margin-right: 0;
-    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
-    border: 2px solid var(--skin-color);
-}
-
-.music-switch .music-switch-toggler.open .fa-spin {
-    color: var(--skin-color);
-}
-
-.music-switch .music-switch-toggler:hover {
-    box-shadow: 0 0 30px rgba(8, 241, 0, 1);
-    /* border: 2px solid var(--skin-color); */
-    color: var(--skin-color);
-}
-
-.music-switch .music-switch-toggler:active {
-    transform: scale(0.8);
-    box-shadow: 0 0 50px rgba(8, 241, 0, 2);
-}
-
-.music-switch .music-switch-toggler:active .fa-spin {
-    color: var(--skin-color);
-}
-
-.music-switch .music {
-    width: 100%;
-    display: flex;
-}
-
-.music-switch:hover {
-    border: 2px solid var(--skin-color);
-}
-
-.music-switch .music .music-btn {
-    width: 30px;
-    height: 40px;
-}
-
-.music-switch .music .music-btn button {
-    background: transparent;
-    border: none;
-    margin: 5px 0 0 3px;
-}
-
-.music-switch .music .music-btn i {
-    color: var(--skin-color);
-    background: var(--bg-black-900);
-    font-size: 20px;
-    padding: 0;
-}
-
-.music-switch .music .music-progrees {
-    background-color: var(--bg-black-100);
-    border: 1px solid var(--bg-black-50);
-    width: 100%;
-    height: 5px;
-    margin-top: 13px;
-}
-
-.music-switch.open:hover .music .music-progrees {
-    border: 1px solid var(--skin-color);
-    border-radius: 5px;   
-}
-
-.music-switch .music .music-progrees .music-progress-grow {
-    width: 0%;
-    height: 100%;
-    background: var(--skin-color);
-}
-
-@media(max-width: 767px) {
-    .music-switch .music-switch-toggler:hover {
-        box-shadow: 0 0 30px rgba(8, 241, 0, 0.5);
-        border: 1px solid var(--skin-color);
-    }
-
-    .music-switch .music-switch-toggler.open {
-        margin-right: 0;
-        box-shadow: 0 0 30px rgba(8, 241, 0, 1);
-        border: 2px solid var(--skin-color);
     }
 }

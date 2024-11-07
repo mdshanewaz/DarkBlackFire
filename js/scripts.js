@@ -58,22 +58,6 @@ function updateNav(element){
     }
 }
 
-document.querySelector(".more-me").addEventListener("click", function(){
-    const sectionIndex = this.getAttribute("data-section-index");
-    console.log(sectionIndex);
-    showSection(this);
-    updateNav(this);
-    removeBackSection();
-    addBackSection(sectionIndex);
-});
-
-document.querySelector(".hire-me").addEventListener("click", function(){
-    const sectionIndex = this.getAttribute("data-section-index");
-    showSection(this);
-    updateNav(this);
-    removeBackSection();
-    addBackSection(sectionIndex);
-});
 
 const mainContent = document.querySelector(".main-content"),
     navTogglerBtn = document.querySelector(".nav-toggler"),
@@ -161,6 +145,14 @@ var typed = new Typed(".typing",{
     BackSpeed: 60,
     loop: true
 });
+document.querySelector(".more-me").addEventListener("click", function(){
+    const sectionIndex = this.getAttribute("data-section-index");
+    console.log(sectionIndex);
+    showSection(this);
+    updateNav(this);
+    removeBackSection();
+    addBackSection(sectionIndex);
+});
 // Home End
 
 // About Start
@@ -190,6 +182,14 @@ let setPercentage = setInterval(() => {
         } 
     }
 })
+
+document.querySelector(".hire-me").addEventListener("click", function(){
+    const sectionIndex = this.getAttribute("data-section-index");
+    showSection(this);
+    updateNav(this);
+    removeBackSection();
+    addBackSection(sectionIndex);
+});
 // About End
 
 // Project Start
@@ -504,3 +504,4 @@ setInterval(() => {
         myAudio.play();
     }
 }, 50);
+// Background Music End
