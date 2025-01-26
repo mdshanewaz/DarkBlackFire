@@ -140,7 +140,7 @@ DaybrandNight.onclick = function(){
 
 // Home Start
 var typed = new Typed(".typing",{
-    strings: ["", "Software Engineer", "Web Designer", "Web Developer", "Data Scientist", "Cyber Security Specialist"],
+    strings: ["", "Software Engineer", "Web Designer", "Web Developer", "Data Scientist", "Cyber Security Analyst"],
     typeSpeed: 100,
     BackSpeed: 60,
     loop: true
