@@ -1195,6 +1195,10 @@ h3.my-profession {
     line-height: 25px;
 }
 
+.project .coding-item .coding-item-inner:hover p {
+    font-weight: 700;
+}
+
 @-webkit-keyframes scroll {
     0% {
         transform: translateX(0);
