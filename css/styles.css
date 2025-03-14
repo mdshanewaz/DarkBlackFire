@@ -808,9 +808,13 @@ h3.my-profession {
 }
 
 .about .about-content .timeline .timeline-item .timeline-inner {
-    border: 1px solid #08f100;
+    border: 1px var(--bg-black-50);
     border-radius: 10px;
     padding: 10px;
+}
+
+.about .about-content .timeline .timeline-item .timeline-inner:hover {
+    border: 1px solid var(--skin-color);
 }
 
 .about .about-content .timeline .timeline-item::before {
@@ -863,12 +867,11 @@ h3.my-profession {
 
 .about .about-content .timeline .timeline-text a {
     color: var(--text-black-700);
-    font-style: italic;
 }
 
-.about .about-content .timeline .timeline-text a:hover {
+.about .about-content .timeline .timeline-inner:hover .timeline-text a {
     color: var(--skin-color);
-    font-style: normal;
+    font-style: italic;
 }
 
 /*Projects*/
